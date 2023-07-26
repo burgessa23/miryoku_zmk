@@ -9,4 +9,4 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["hillside_left nice_view_adapter nice_view","hillside_right nice_view_adapter nice_view"]'
+      shield: '["hillside52_left nice_view_adapter nice_view","hillside52_right nice_view_adapter nice_view"]'

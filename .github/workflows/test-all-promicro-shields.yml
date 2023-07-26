@@ -38,6 +38,7 @@ jobs:
         "choc-corne_left","choc-corne_right",
         "helix_left","helix_right",
         "hillside48_left","hillside48_right",
+        "hillside52_left","hillside52_right",
         "horizon",
         "humla",
         "iris_left","iris_right",

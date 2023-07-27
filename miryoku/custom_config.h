@@ -66,12 +66,12 @@ ZMK_BEHAVIOR(shift_space, hold_tap,
     bindings = <&sk>, <&kp>;
 )
 
-ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap;         // requires PR #1387
-    bindings = <&kp>, <&back_fwd>;
-)
+/* ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap, */
+/*     tapping-term-ms = <280>; */
+/*     quick-tap-ms = <175>;                // repeat on tap-into-hold */
+/*     global-quick-tap;         // requires PR #1387 */
+/*     bindings = <&kp>, <&back_fwd>; */
+/* ) */
 
 /* ZMK_BEHAVIOR(esc_tilde, tap_dance, */
 /*     tapping-term-ms = <250>; */

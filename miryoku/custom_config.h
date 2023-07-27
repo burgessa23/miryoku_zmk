@@ -67,14 +67,14 @@ ZMK_BEHAVIOR(shift_space, hold_tap,
     bindings = <&sk>, <&kp>;
 )
 
-ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap;         // requires PR #1387
-    bindings = <&kp>, <&back_fwd>;
-)
+/* ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap, */
+/*     tapping-term-ms = <280>; */
+/*     quick-tap-ms = <175>;                // repeat on tap-into-hold */
+/*     global-quick-tap;         // requires PR #1387 */
+/*     bindings = <&kp>, <&back_fwd>; */
+/* ) */
 
-TAPPY_TAP_TAP(back_fwd, &kp LG(LBKT), &kp LG(RBKT));
+/* TAPPY_TAP_TAP(back_fwd, &kp LG(LBKT), &kp LG(RBKT)); */
 
 #define MIRYOKU_LAYOUTMAPPING_HILLSIDE52(\
      K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \
@@ -82,8 +82,8 @@ TAPPY_TAP_TAP(back_fwd, &kp LG(LBKT), &kp LG(RBKT));
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
-XXX  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
-XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  XXX  \
-XXX         K20  K21  K22  K23  K24  XXX               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  XXX  \
-XXX         XXX  XXX       XXX  K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  XXX  XXX  XXX  XXX  \
+&kp ESC  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
+XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  &kp SEMI  \
+XXX         K20  K21  K22  K23  K24  &kp RCMD               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  &kp LSHFT  \
+XXX    XXX     XXX  &kp F11   K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &kp F12  &kp LG(LBKT) XXX &kp LG(RBKT) \
 

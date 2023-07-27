@@ -71,25 +71,25 @@ ZMK_BEHAVIOR(esc_tilde, tap_dance,
     bindings = <&kp ESC>, <&kp GRAVE>, <&kp TILDE>;
 )
 
-ZMK_BEHAVIOR(left_word, tap_dance,
-    tapping-term-ms = <300>;
-    bindings = <&kp LEFT>, <&kp LA(LEFT)>, <&kp LG(LEFT)>;
-)
+/* ZMK_BEHAVIOR(left_word, tap_dance, */
+/*     tapping-term-ms = <300>; */
+/*     bindings = <&kp LEFT>, <&kp LA(LEFT)>, <&kp LG(LEFT)>; */
+/* ) */
 
-ZMK_BEHAVIOR(right_word, tap_dance,
-    tapping-term-ms = <300>;
-    bindings = <&kp RIGHT>, <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
-)
+/* ZMK_BEHAVIOR(right_word, tap_dance, */
+/*     tapping-term-ms = <300>; */
+/*     bindings = <&kp RIGHT>, <&kp LA(RIGHT)>, <&kp LG(RIGHT)>; */
+/* ) */
 
-ZMK_BEHAVIOR(down_word, tap_dance,
-    tapping-term-ms = <300>;
-    bindings = <&kp DOWN>, <&kp LA(DOWN)>;
-)
+/* ZMK_BEHAVIOR(down_word, tap_dance, */
+/*     tapping-term-ms = <300>; */
+/*     bindings = <&kp DOWN>, <&kp LA(DOWN)>; */
+/* ) */
 
-ZMK_BEHAVIOR(up_word, tap_dance,
-    tapping-term-ms = <300>;
-    bindings = <&kp UP>, <&kp LA(UP)>;
-)
+/* ZMK_BEHAVIOR(up_word, tap_dance, */
+/*     tapping-term-ms = <300>; */
+/*     bindings = <&kp UP>, <&kp LA(UP)>; */
+/* ) */
 
 ZMK_BEHAVIOR(tap_dance_0, tap_dance,
     tapping-term-ms = <300>;

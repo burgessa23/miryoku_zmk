@@ -98,15 +98,15 @@ ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
 /*     bindings = <&kp UP>, <&kp LA(UP)>; */
 /* ) */
 
-ZMK_BEHAVIOR(tap_dance_0, tap_dance,
-    tapping-term-ms = <300>;
-    bindings =  <&kp F12>, <&kp LG(LBKT)>, <&kp LG(PIPE)>;
-)
+/* ZMK_BEHAVIOR(tap_dance_0, tap_dance, */
+/*     tapping-term-ms = <300>; */
+/*     bindings =  <&kp F12>, <&kp LG(LBKT)>, <&kp LG(PIPE)>; */
+/* ) */
 
-ZMK_BEHAVIOR(back_fwd, tap_dance,
-    tapping-term-ms = <175>;
-    bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>;
-)
+/* ZMK_BEHAVIOR(back_fwd, tap_dance, */
+/*     tapping-term-ms = <175>; */
+/*     bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>; */
+/* ) */
 
 #define MIRYOKU_LAYOUTMAPPING_HILLSIDE52(\
      K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \
@@ -116,6 +116,6 @@ ZMK_BEHAVIOR(back_fwd, tap_dance,
 )\
 XXX  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
 XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  XXX  \
-XXX         K20  K21  K22  K23  K24  &rcmd_back_fwd RCMD 0               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  XXX  \
-XXX         XXX  XXX       XXX  K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &tap_dance_0  XXX  XXX  XXX  \
+XXX         K20  K21  K22  K23  K24  XXX               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  XXX  \
+XXX         XXX  XXX       XXX  K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  XXX  XXX  XXX  XXX  \
 

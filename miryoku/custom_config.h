@@ -8,6 +8,13 @@
 #define MIRYOKU_CLIPBOARD_MAC
 
 #define XXX &none
+#undef COMBO_HOOK
+#define COMBO_HOOK global-quick-tap-ms = <100>;
+#define QUICK_TAP_MS 175
+
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 45
+
 
 &pinctrl {
     spi0_default: spi0_default {

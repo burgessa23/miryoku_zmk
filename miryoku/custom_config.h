@@ -52,6 +52,13 @@ nice_view_spi: &spi0 {
 /*           K32  K33  K34  XXX  &to U_BASE K35  K36  K37 */
 
 // nodefree configs
+ZMK_BEHAVIOR(shift_space, hold_tap,
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap;         // requires PR #1387
+    bindings = <&sk>, <&kp>;
+)
+
 ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -103,5 +110,5 @@ ZMK_BEHAVIOR(back_fwd, tap_dance,
 &esc_tilde  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
 XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  XXX  \
 XXX         K20  K21  K22  K23  K24  &rcmd_back_fwd RCMD 0               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  XXX  \
-XXX         XXX  XXX       XXX  K32  K33                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &tap_dance_0  XXX  XXX  XXX  \
+XXX         XXX  XXX       XXX  K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &tap_dance_0  XXX  XXX  XXX  \
 

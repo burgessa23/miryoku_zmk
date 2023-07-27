@@ -66,10 +66,10 @@ ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
     bindings = <&kp>, <&back_fwd>;
 )
 
-ZMK_BEHAVIOR(esc_tilde, tap_dance,
-    tapping-term-ms = <250>;
-    bindings = <&kp ESC>, <&kp GRAVE>, <&kp TILDE>;
-)
+/* ZMK_BEHAVIOR(esc_tilde, tap_dance, */
+/*     tapping-term-ms = <250>; */
+/*     bindings = <&kp ESC>, <&kp GRAVE>, <&kp TILDE>; */
+/* ) */
 
 /* ZMK_BEHAVIOR(left_word, tap_dance, */
 /*     tapping-term-ms = <300>; */
@@ -107,7 +107,7 @@ ZMK_BEHAVIOR(back_fwd, tap_dance,
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
-&esc_tilde  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
+XXX  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
 XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  XXX  \
 XXX         K20  K21  K22  K23  K24  &rcmd_back_fwd RCMD 0               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  XXX  \
 XXX         XXX  XXX       XXX  K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &tap_dance_0  XXX  XXX  XXX  \

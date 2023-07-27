@@ -85,5 +85,5 @@ ZMK_BEHAVIOR(shift_space, hold_tap,
 &kp ESC  K00  K01  K02  K03  K04                                                         K05  K06           K07  K08  K09  XXX  \
 XXX         K10  K11  K12  K13  K14                                                         K15  K16           K17  K18  K19  &kp SEMI  \
 XXX         K20  K21  K22  K23  K24  &kp RCMD               &kp LS(LG(SPACE))  K25  K26           K27  K28  K29  &kp LSHFT  \
-XXX    XXX     XXX  &kp F11   K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &kp F12  &kp LG(LBKT) XXX &kp LG(RBKT) \
+&kp LG(F6)  &kp LS(LG(A))     &kp LA(C)  &kp F11   K32  U_LT(U_NAV, &shift_space)                    K34     U_LT(U_NUM, BSPC)  U_LT(U_SYM, RET)                K37  &kp F12  &kp LG(LBKT) XXX &kp LG(RBKT) \
 

@@ -15,6 +15,18 @@
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 45
 
+#define TAPPY_TAP_TAP(NAME, BINDING, BINDING2) \
+/ { \
+  behaviors { \
+    NAME: NAME { \
+      compatible = "zmk,behavior-tap-dance"; \
+      label = U_STRINGIFY(NAME); \
+      #binding-cells = <0>; \
+      tapping-term-ms = <U_TAPPING_TERM>; \
+      bindings = <BINDING>, <BINDING2>; \
+    }; \
+  }; \
+};
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -62,40 +74,7 @@ ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
     bindings = <&kp>, <&back_fwd>;
 )
 
-ZMK_BEHAVIOR(back_fwd, tap_dance,
-    tapping-term-ms = <175>;
-    bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>;
-)
-
-/* ZMK_BEHAVIOR(esc_tilde, tap_dance, */
-/*     tapping-term-ms = <250>; */
-/*     bindings = <&kp ESC>, <&kp GRAVE>, <&kp TILDE>; */
-/* ) */
-
-/* ZMK_BEHAVIOR(left_word, tap_dance, */
-/*     tapping-term-ms = <300>; */
-/*     bindings = <&kp LEFT>, <&kp LA(LEFT)>, <&kp LG(LEFT)>; */
-/* ) */
-
-/* ZMK_BEHAVIOR(right_word, tap_dance, */
-/*     tapping-term-ms = <300>; */
-/*     bindings = <&kp RIGHT>, <&kp LA(RIGHT)>, <&kp LG(RIGHT)>; */
-/* ) */
-
-/* ZMK_BEHAVIOR(down_word, tap_dance, */
-/*     tapping-term-ms = <300>; */
-/*     bindings = <&kp DOWN>, <&kp LA(DOWN)>; */
-/* ) */
-
-/* ZMK_BEHAVIOR(up_word, tap_dance, */
-/*     tapping-term-ms = <300>; */
-/*     bindings = <&kp UP>, <&kp LA(UP)>; */
-/* ) */
-
-/* ZMK_BEHAVIOR(tap_dance_0, tap_dance, */
-/*     tapping-term-ms = <300>; */
-/*     bindings =  <&kp F12>, <&kp LG(LBKT)>, <&kp LG(PIPE)>; */
-/* ) */
+TAPPY_TAP_TAP(back_fwd, &kp LG(LBKT), &kp LG(RBKT));
 
 #define MIRYOKU_LAYOUTMAPPING_HILLSIDE52(\
      K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \

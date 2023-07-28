@@ -1,7 +1,6 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#include "../zmk-nodefree-config/helper.h"
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/52/hillside52.h"
 #include "../miryoku/miryoku.dtsi"

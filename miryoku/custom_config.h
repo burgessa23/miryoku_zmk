@@ -1,5 +1,15 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_52keys_hillside.h"
+
+
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5 // left-hand keys
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5 // right-hand keys
+#define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3                                      // thumb keys
+
+
+
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_TAP_QWERTY
 #define MIRYOKU_MAPPING_EXTENDED_THUMBS
@@ -15,18 +25,6 @@
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 45
 
-#define TAPPY_TAP_TAP(NAME, BINDING, BINDING2) \
-/ { \
-  behaviors { \
-    NAME: NAME { \
-      compatible = "zmk,behavior-tap-dance"; \
-      label = U_STRINGIFY(NAME); \
-      #binding-cells = <0>; \
-      tapping-term-ms = <U_TAPPING_TERM>; \
-      bindings = <BINDING>, <BINDING2>; \
-    }; \
-  }; \
-};
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -74,8 +72,26 @@ nice_view_spi: &spi0 {
 /*     bindings = <&kp>, <&back_fwd>; */
 /* ) */
 
-/* TAPPY_TAP_TAP(back_fwd, &kp LG(LBKT), &kp LG(RBKT)); */
+ZMK_BEHAVIOR(hml, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap-ms = <150>;         // requires PR #1387
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+)
 
+/* right-hand HRMs */
+ZMK_BEHAVIOR(hmr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap-ms = <150>;         // requires PR #1387
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+)
 #define MIRYOKU_LAYOUTMAPPING_HILLSIDE52(\
      K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \
      K10, K11, K12, K13, K14,                          K15, K16, K17, K18, K19, \

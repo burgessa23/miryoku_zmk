@@ -53,3 +53,15 @@ ZMK_BEHAVIOR(u_hmr, hold_tap,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
+ZMK_BEHAVIOR(rcmd_back_fwd, hold_tap,
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap;         // requires PR #1387
+    bindings = <&kp>, <&back_fwd>;
+)
+
+
+ZMK_BEHAVIOR(back_fwd, tap_dance,
+    tapping-term-ms = <175>;
+    bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>;
+)

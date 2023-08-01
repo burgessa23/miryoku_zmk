@@ -73,7 +73,7 @@ ZMK_BEHAVIOR(sticky_helper, macro,
 )
 
 ZMK_BEHAVIOR(ht2, hold_tap,
-    tapping-term-ms = <280>;
+    tapping-term-ms = <180>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
     bindings = <&kp>, <&kp>;

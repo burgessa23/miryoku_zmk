@@ -67,7 +67,7 @@ ZMK_BEHAVIOR(shift_space, hold_tap,
 )
 
 ZMK_BEHAVIOR(sticky_helper, macro,
-    wait-ms = <175>;
+    wait-ms = <275>;
     tap-ms = <5>;
     bindings = <&kp SPACE &sl 1>;
 )

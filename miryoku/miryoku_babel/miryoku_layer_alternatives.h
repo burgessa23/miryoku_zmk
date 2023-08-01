@@ -389,6 +389,9 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 
 #define MIRYOKU_ALTERNATIVES_CLEAR \
 &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,          &trans,          &trans,         &trans,         &trans,              &trans,              &trans,         &trans,         &trans,          &trans,          \
 &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,              &trans,              &trans,            U_HT2(LSHFT, SPACE),            &trans,            &trans,            &trans,            &trans,            &trans,              &trans
+&trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
+&trans,             &trans,             &trans,             U_HT2(LSHFT, SPACE),&trans,             &trans,             &trans,             &trans,             &trans,             &trans
+
+
+

@@ -76,6 +76,6 @@ ZMK_BEHAVIOR(ht2, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
-    bindings = <&kp SHIFT>, <&kp SPACE>;
+    bindings = <&kp>, <&kp>;
 )
 

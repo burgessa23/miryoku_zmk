@@ -391,4 +391,4 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
 &trans,          &trans,          &trans,         &trans,         &trans,              &trans,              &trans,         &trans,         &trans,          &trans,          \
 &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,              &trans,              &trans,            U_HT2(LSHFT, 0),            &trans,            &trans,            &trans,            &trans,            &trans,              &trans
+&trans,              &trans,              &trans,            U_HT2(LSHFT, SPACE),            &trans,            &trans,            &trans,            &trans,            &trans,              &trans

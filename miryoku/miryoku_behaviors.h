@@ -12,5 +12,5 @@
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 
 #define U_SHFT_SPC_NAV(MOD, TAP) &shift_space MOD 0
-#define U_HT2 &ht2
+#define U_HT2 &ht2 0 0
 

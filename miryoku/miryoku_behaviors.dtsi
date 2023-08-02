@@ -59,7 +59,7 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
     bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>, <&kp LG(PIPE)>;
 )
 
-ZMK_BEHAVIOR(u_raycast, tap_dance,
+ZMK_BEHAVIOR(u_ray, tap_dance,
     tapping-term-ms = <150>;
     bindings = <&kp>, <&kp>;
 )

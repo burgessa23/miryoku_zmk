@@ -61,7 +61,7 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
 
 ZMK_BEHAVIOR(u_raycast, tap_dance,
     tapping-term-ms = <150>;
-    bindings = <&kp LS(LG(SPACE))>, <&kp LS(LG(A))>;
+    bindings = <&kp>, <&kp>;
 )
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,

@@ -59,17 +59,22 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
     bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>, <&kp LG(PIPE)>;
 )
 
+ZMK_BEHAVIOR(shifty_space_tap, tap_dance,
+    tapping-term-ms = <100>;
+    bindings = <&kp SPACE>, <&kp LSHFT>;
+)
+
 ZMK_BEHAVIOR(shift_space, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
-    bindings = <&mo>, <&sticky_helper>;
+    bindings = <&mo>, <&shifty_space_tap>;
 )
 
 ZMK_BEHAVIOR(sticky_helper, macro,
     wait-ms = <0>;
     tap-ms = <0>;
-    bindings = <&kp SPACE &macro_tap_time 150 &kp BKSP &sl 1>;
+    bindings = <&kp SPACE &macro_tap_time 150 &sl 1>;
 )
 
 ZMK_BEHAVIOR(ht2, hold_tap,

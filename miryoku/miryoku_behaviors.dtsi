@@ -60,8 +60,8 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
 )
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,
-    tapping-term-ms = <100>;
-    bindings = <&kp SPACE>, <&kp LSHFT>;
+    tapping-term-ms = <200>;
+    bindings = <&kp SPACE>, <&mt LSHIFT>;
 )
 
 ZMK_BEHAVIOR(shift_space, hold_tap,

@@ -65,7 +65,7 @@ ZMK_BEHAVIOR(u_ray, tap_dance,
 )
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
     bindings = <&kp SPACE>, <&kp LSHFT>;
 )
 

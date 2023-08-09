@@ -74,7 +74,7 @@ ZMK_BEHAVIOR(shift_esc, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
-    bindings = <&kp LSHFT>, <&shifty_esc_tap>;
+    bindings = <&kp>, <&shifty_esc_tap>;
 )
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,

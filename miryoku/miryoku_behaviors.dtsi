@@ -28,7 +28,7 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
-    td0: u_ray {
+    u_ray: u_ray {
         compatible = "zmk,behavior-tap-dance";
         label = "u_ray";
         #binding-cells = <0>;

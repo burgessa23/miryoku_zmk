@@ -35,6 +35,15 @@
         tapping-term-ms = <200>;
         bindings = <&kp LS(LG(SPACE))>, <&kp LS(LA(C))>;
     };
+    as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTO_SHIFT";
+        #binding-cells = <2>;
+        tapping_term_ms = <135>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
   };
 };
 

@@ -35,6 +35,13 @@
         tapping-term-ms = <200>;
         bindings = <&kp LS(LG(SPACE))>, <&kp LS(LA(C))>;
     };
+    u_zoom: u_zoom {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_zoom";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LS(LG(A))>, <&kp LS(LG(V))>;
+    };
     as: auto_shift {
         compatible = "zmk,behavior-hold-tap";
         label = "AUTO_SHIFT";

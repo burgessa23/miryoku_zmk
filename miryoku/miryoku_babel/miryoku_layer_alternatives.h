@@ -118,7 +118,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 U_HML(ESC, Q),     &kp W,          &kp E,              &kp R,                        &kp T,              &kp Y,             &kp U,            &kp I,            &kp O,             U_HMR(BSPC, P),             \
 U_HML(LGUI, A),    U_HML(LALT, S), U_HML(LCTRL, D),    U_HML(LSHFT, F),              &kp G,              &kp H,             U_HMR(LSHFT, J),  U_HMR(LCTRL, K),  U_HMR(LALT, L),    U_HMR(LGUI, SQT),   \
 U_LT(U_BUTTON, Z), U_HML(RALT, X), &kp C,              &kp V,                        &kp B,              &kp N,             &kp M,            &kp COMMA,        U_HMR(RALT, DOT),  U_LT(U_BUTTON, SLASH),\
-U_NP,              U_NP,           U_LT(U_MEDIA, ESC), U_SHFT_ESC_MEDIA(LSHFT, SPACE), U_LT(U_NAV, TAB), U_LT(U_SYM, BSPC), U_LT(U_NUM, RET), U_LT(U_FUN, DEL), U_NP,              U_NP
+U_NP,              U_NP,           U_LT(U_MEDIA, ESC), U_SHFT_ESC_MEDIA(LSHFT, SPACE), U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LT(U_NUM, RET), U_LT(U_FUN, DEL), U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -239,7 +239,7 @@ U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp 
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              &kp ESC,           U_NP,              &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          U_NP,              &kp DEL,           U_NP
+U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp BSPC,          &kp RET,           &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTZ \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \

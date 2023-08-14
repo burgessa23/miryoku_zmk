@@ -85,7 +85,7 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
 
 ZMK_BEHAVIOR(shifty_esc_tap, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&kp SPACE>, <&mo U_MOUSE>;
+    bindings = <&kp SPACE>, <&mo U_NAV>;
 )
 
 ZMK_BEHAVIOR(shift_esc, hold_tap,

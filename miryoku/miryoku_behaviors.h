@@ -15,5 +15,5 @@
 #define U_SHFT_SPC_NAV(MOD, TAP) &s_spc 0 0 
 #define U_SHFT_ESC_MEDIA(MOD, TAP) &shift_esc MOD 0
 #define U_HT2(MOD, TAP) &ht2 MOD TAP
-
+#define U_NST(MOD, TAP) &nst 0 TAP
 #define AS(keycode) &as LS(keycode) keycode

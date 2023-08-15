@@ -57,7 +57,7 @@
         tapping_term_ms = <200>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
-        bindings = <&s_nav>, <&kp SPACE>;
+        bindings = <&s_nav 0 0>, <&kp SPACE>;
     };
     s_nav: shift_nav {
         compatible = "zmk,behavior-hold-tap";

@@ -88,11 +88,19 @@ ZMK_BEHAVIOR(shifty_esc_tap, tap_dance,
     bindings = <&kp SPACE>, <&mo U_NAV>;
 )
 
+ZMK_BEHAVIOR(shifty_nav_hold, hold_tap,
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap;         // requires PR #1387
+    bindings = <&mo U_NAV>, <&kp LSHFT>;
+)
+
+
 ZMK_BEHAVIOR(shift_esc, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
-    bindings = <&kp>, <&shifty_esc_tap>;
+    bindings = <&shifty_nav_hold>, <&kp SPACE>;
 )
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,

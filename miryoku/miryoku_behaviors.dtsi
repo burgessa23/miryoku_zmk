@@ -109,10 +109,10 @@ ZMK_BEHAVIOR(shifty_space_tap, tap_dance,
 )
 
 ZMK_BEHAVIOR(shift_space, hold_tap,
-    tapping-term-ms = <280>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap;         // requires PR #1387
-    bindings = <&mo>, <&shifty_space_tap>;
+    bindings = <&shifty_nav_hold>, <&kp SPACE>;
 )
 
 ZMK_BEHAVIOR(sticky_helper, macro,

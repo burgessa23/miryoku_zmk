@@ -68,14 +68,16 @@
         flavor = "hold-preferred";
         bindings = <&kp_shift>, <&mo_nav>;
     };
-    ZMK_MACRO(mo_nav,
-        bindings = <&macro_press &mo U_NAV &macro_pause_for_release &macro_release &mo U_NAV>;
-    )
-    ZMK_MACRO(kp_shift, 
-        bindings = <&macro_press &kp LSHFT &macro_pause_for_release &macro_release &kp LSHFT>;
-    )
   };
 };
+
+
+ZMK_MACRO(mo_nav,
+    bindings = <&macro_press &mo U_NAV &macro_pause_for_release &macro_release &mo U_NAV>;
+)
+ZMK_MACRO(kp_shift, 
+    bindings = <&macro_press &kp LSHFT &macro_pause_for_release &macro_release &kp LSHFT>;
+)
 
 ZMK_BEHAVIOR(u_hml, hold_tap,
     flavor = "balanced";

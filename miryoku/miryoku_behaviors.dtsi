@@ -61,7 +61,7 @@
     };
     s_nav: shift_nav {
         compatible = "zmk,behavior-hold-tap";
-        label = "SHIFT_SPACE";
+        label = "SHIFT_NAV";
         #binding-cells = <2>;
         tapping_term_ms = <200>;
         quick_tap_ms = <0>;

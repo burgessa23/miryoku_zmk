@@ -12,7 +12,7 @@
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define U_RAY &u_ray
 #define U_ZOOM &u_zoom
-#define U_SHFT_SPC_NAV &s_spc 
+#define U_SHFT_SPC_NAV(MOD, TAP) &s_spc 0 0 
 #define U_SHFT_ESC_MEDIA(MOD, TAP) &shift_esc MOD 0
 #define U_HT2(MOD, TAP) &ht2 MOD TAP
 

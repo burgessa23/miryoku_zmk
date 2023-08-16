@@ -71,7 +71,7 @@
   };
   macros {
     mo_nav: mo_nav {
-        label = "mo_nav"
+        label = "mo_nav";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
@@ -81,7 +81,7 @@
             ;
     };
     kp_shift: kp_shift {
-        label = "kp_shift"
+        label = "kp_shift";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings

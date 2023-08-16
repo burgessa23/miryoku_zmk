@@ -63,7 +63,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_NAV";
         #binding-cells = <2>;
-        tapping_term_ms = <500>;
+        tapping_term_ms = <150>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp_shift>, <&mo_nav>;

@@ -69,15 +69,30 @@
         bindings = <&kp_shift>, <&mo_nav>;
     };
   };
+  macros {
+    mo_nav: mo_nav {
+        label = "mo_nav"
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &mo U_NAV>
+            , <&macro_pause_for_release>
+            , <&macro_release &mo U_NAV>
+            ;
+    };
+    kp_shift: kp_shift {
+        label = "kp_shift"
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LSHFT>
+            ;
+    };
+  };
 };
 
-
-ZMK_MACRO(mo_nav,
-    bindings = <&macro_press &mo U_NAV &macro_pause_for_release &macro_release &mo U_NAV>;
-)
-ZMK_MACRO(kp_shift, 
-    bindings = <&macro_press &kp LSHFT &macro_pause_for_release &macro_release &kp LSHFT>;
-)
 
 ZMK_BEHAVIOR(u_hml, hold_tap,
     flavor = "balanced";

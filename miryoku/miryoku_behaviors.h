@@ -17,3 +17,4 @@
 #define U_HT2(MOD, TAP) &ht2 MOD TAP
 #define U_NST(MOD, TAP) &nst 0 TAP
 #define AS(keycode) &as LS(keycode) keycode
+#define SPNAV(MOD, TAP) &spnav 0 0

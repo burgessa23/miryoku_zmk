@@ -66,7 +66,16 @@
         tapping_term_ms = <500>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
-        bindings = <&kp_shift>, <&kp>;
+        bindings = <&kp_shift>, <&mo_nav>;
+    };
+    spnav: space_nav {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SPACE_NAV";
+        #binding-cells = <2>;
+        tapping_term_ms = <500>;
+        quick_tap_ms = <0>;
+        flavor = "balanced";
+        bindings = <&kp_shift>, <&space_nav_tap>;
     };
   };
   macros {
@@ -122,11 +131,10 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
 )
 
 
-ZMK_BEHAVIOR(shifty_esc_tap, tap_dance,
-    tapping-term-ms = <200>;
+ZMK_BEHAVIOR(space_nav_tap, tap_dance,
+    tapping-term-ms = <250>;
     bindings = <&kp SPACE>, <&mo U_NAV>;
 )
-
 
 
 ZMK_BEHAVIOR(shifty_space_tap, tap_dance,

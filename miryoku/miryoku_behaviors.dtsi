@@ -142,8 +142,13 @@ ZMK_BEHAVIOR(u_back_fwd, tap_dance,
 
 
 ZMK_BEHAVIOR(space_caps_word, tap_dance,
-    tapping-term-ms = <250>;
+    tapping-term-ms = <280>;
     bindings = <&kp SPACE>, <&u_caps_word>;
+)
+
+ZMK_BEHAVIOR(parens, tap_dance,
+    tapping-term-ms = <250>;
+    bindings = <&kp RPAR>, <&kp LPAR>;
 )
 
 ZMK_BEHAVIOR(sticky_helper, macro,

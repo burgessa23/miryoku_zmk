@@ -72,7 +72,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_NAV";
         #binding-cells = <2>;
-        tapping_term_ms = <700>;
+        tapping_term_ms = <500>;
         quick_tap_ms = <100>;
         global-quick-tap;
         flavor = "tap-preferred";

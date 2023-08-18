@@ -42,7 +42,7 @@
         quick_tap_ms = <50>;
         global-quick-tap;
         flavor = "tap-preferred";
-        bindings = <&kp RCMD>, <&u_ray>;
+        bindings = <&kp RCMD>, <&ray_macro>;
     };
     u_zoom: u_zoom {
         compatible = "zmk,behavior-tap-dance";
@@ -110,6 +110,16 @@
             = <&macro_press &s_nav U_NAV LSHFT>
             , <&macro_pause_for_release>
             , <&macro_release &s_nav U_NAV LSHFT>
+            ;
+    };
+    ray_macro: ray_macro {
+        label = "ray_macro";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &u_ray 0 0>
+            , <&macro_pause_for_release>
+            , <&macro_release &u_ray 0 0>
             ;
     };
   };

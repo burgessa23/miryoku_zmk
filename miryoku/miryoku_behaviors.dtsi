@@ -81,7 +81,7 @@
         quick_tap_ms = <50>;
         global-quick-tap;
         flavor = "tap-preferred";
-        bindings = <&s_nav_wrap>, <&kp SPACE>;
+        bindings = <&s_nav_wrap>, <&kp>;
     };
     s_nav: shift_nav {
         compatible = "zmk,behavior-hold-tap";

@@ -46,7 +46,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "u_esc_caps";
         #binding-cells = <0>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <200>;
         bindings = <&kp ESC>, <&u_caps_word>;
     };
     esc_caps_wrap: esc_caps_wrap {
@@ -56,6 +56,21 @@
         tapping_term_ms = <550>;
         flavor = "balanced";
         bindings = <&kp>, <&u_esc_caps>;
+    };
+    u_sym_bspc: u_sym_bspc {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_sym_bspc";
+        #binding-cells = <0>;
+        tapping-term-ms = <10>;
+        bindings = <&kp BSPC>, <&kp BSPC>;
+    };
+    sym_bspc_wrap: sym_bspc_wrap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SYM_BSPC_WRAP";
+        #binding-cells = <2>;
+        tapping_term_ms = <550>;
+        flavor = "balanced";
+        bindings = <&mo>, <&u_sym_bspc>;
     };
     u_zoom: u_zoom {
         compatible = "zmk,behavior-tap-dance";
@@ -77,7 +92,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_SPACE";
         #binding-cells = <2>;
-        tapping_term_ms = <150>;
+        tapping_term_ms = <250>;
         quick_tap_ms = <50>;
         global-quick-tap;
         flavor = "tap-preferred";
@@ -164,6 +179,17 @@ ZMK_BEHAVIOR(space_caps_word, tap_dance,
 ZMK_BEHAVIOR(parens, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&kp LPAR>, <&kp RPAR>;
+)
+
+
+ZMK_BEHAVIOR(bksp_p, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp P>, <&kp BSPC>;
+)
+
+ZMK_BEHAVIOR(esc_q, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp Q>, <&kp ESC>;
 )
 
 ZMK_BEHAVIOR(sticky_helper, macro,

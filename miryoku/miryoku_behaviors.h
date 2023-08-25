@@ -20,3 +20,6 @@
 #define U_NST(MOD, TAP) &nst 0 TAP
 #define AS(keycode) &as LS(keycode) keycode
 #define SPNAV(MOD, TAP) &spnav 0 0
+
+
+#define U_SYM_BSPC_WRAP(MOD, TAP) &sym_bspc_wrap MOD 0

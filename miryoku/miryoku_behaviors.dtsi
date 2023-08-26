@@ -49,13 +49,14 @@
         tapping-term-ms = <200>;
         bindings = <&kp ESC>, <&u_caps_word>;
     };
-    esc_caps_wrap: esc_caps_wrap {
+    med_caps_word: med_caps_word {
         compatible = "zmk,behavior-hold-tap";
-        label = "ESC_CAPS_WRAP";
+        label = "MED_CAPS_WORD";
         #binding-cells = <2>;
-        tapping_term_ms = <550>;
+        tapping_term_ms = <250>;
+        global-quick-tap-ms = <150>;         // requires PR #1387
         flavor = "balanced";
-        bindings = <&kp>, <&u_esc_caps>;
+        bindings = <&mo>, <&u_caps_word >;
     };
     u_sym_bspc: u_sym_bspc {
         compatible = "zmk,behavior-tap-dance";

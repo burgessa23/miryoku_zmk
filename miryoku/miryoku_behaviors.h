@@ -22,4 +22,4 @@
 #define SPNAV(MOD, TAP) &spnav 0 0
 
 
-#define U_SYM_BSPC_WRAP(MOD, TAP) &sym_bspc_wrap MOD 0
+#define U_MED_CAPS_WORD(MOD, TAP) &med_caps_word MOD 0

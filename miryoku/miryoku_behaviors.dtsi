@@ -114,7 +114,7 @@
         label = "space_nav_tap";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp SPACE>, <&mo_nav>;
+        bindings = <&kp SPACE>, <&tog U_NAV>;
     };
     s_n_s: shift_nav_space {
         compatible = "zmk,behavior-hold-tap";

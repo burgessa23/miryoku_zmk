@@ -75,7 +75,7 @@
     };
     u_nav_space: u_nav_space {
         compatible = "zmk,behavior-tap-dance";
-        label = "u_nav_space";
+        label = "U_NAV_SPACE";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp SPACE>, <&mo U_NAV>;

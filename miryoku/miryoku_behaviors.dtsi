@@ -73,21 +73,6 @@
         flavor = "balanced";
         bindings = <&mo>, <&u_sym_bspc>;
     };
-    u_nav_space: u_nav_space {
-        compatible = "zmk,behavior-tap-dance";
-        label = "u_nav_space";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp SPACE>, <&mo U_NAV>;
-    };
-    shift_space_nav: shift_space_nav {
-        compatible = "zmk,behavior-hold-tap";
-        label = "SHIFT_SPACE_NAV";
-        #binding-cells = <2>;
-        tapping_term_ms = <250>;
-        flavor = "balanced";
-        bindings = <&kp>, <&u_nav_space>;
-    };
     u_zoom: u_zoom {
         compatible = "zmk,behavior-tap-dance";
         label = "u_zoom";

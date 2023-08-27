@@ -22,4 +22,4 @@
 #define SPNAV(MOD, TAP) &spnav 0 0
 
 
-#define U_SHIFT_SPACE_NAV(MOD, TAP) &shift_space_nav MOD 0
+#define U_MED_CAPS_WORD(MOD, TAP) &med_caps_word MOD 0

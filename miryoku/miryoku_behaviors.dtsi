@@ -31,7 +31,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "u_ray";
         #binding-cells = <0>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <350>;
         bindings = <&kp LS(LG(SPACE))>, <&kp LS(LA(C))>;
     };
     ray_wrap: ray_wrap {
@@ -120,11 +120,11 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_NAV_SPACE";
         #binding-cells = <2>;
-        tapping-term-ms = <250>;
-        quick_tap_ms = <150>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <100>;
         global-quick-tap;
         flavor = "tap-preferred";
-        bindings = <&kp>, <&space_nav_tap>;
+        bindings = <&mo>, <&kp>;
     };
   };
   macros {

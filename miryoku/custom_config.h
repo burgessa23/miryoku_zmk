@@ -56,6 +56,6 @@ nice_view_spi: &spi0 {
 )\
 XXX  K00     K01                       K02  K03               K04                                                      K05  K06               K07  K08           K09          XXX  \
 XXX  K10     K11                       K12  K13               K14                                                      K15  K16               K17  K18           K19          XXX  \
-XXX  K20     K21                       K22  K23               K24  U_MT(U_MOUSE, ESC)             U_RAY_WRAP(RCMD, ESC)  K25  K26               K27  K28           K29          XXX  \
+XXX  K20     K21                       K22  K23               K24  U_LT(U_MOUSE, ESC)             U_RAY_WRAP(RCMD, ESC)  K25  K26               K27  K28           K29          XXX  \
 XXX  U_ZOOM  U_HML(LA(TAB), LG(PIPE))  K32  U_MT(LCMD, F11)  K33  K34                           K35                   K36  U_HMR(RALT, F12)  K37  &kp LG(LBKT)  &kp LG(RBKT) XXX  \
 

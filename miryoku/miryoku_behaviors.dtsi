@@ -124,7 +124,7 @@
         quick_tap_ms = <100>;
         global-quick-tap;
         flavor = "tap-preferred";
-        bindings = <&mo>, <&kp>;
+        bindings = <&kp>, <&space_nav_tap>;
     };
   };
   macros {

@@ -116,22 +116,12 @@
         tapping-term-ms = <300>;
         bindings = <&kp SPACE>, <&tog U_NAV>;
     };
-    // s_n_s: shift_nav_space {
-    //     compatible = "zmk,behavior-hold-tap";
-    //     label = "SHIFT_NAV_SPACE";
-    //     #binding-cells = <2>;
-    //     tapping-term-ms = <200>;
-    //     quick_tap_ms = <100>;
-    //     global-quick-tap;
-    //     flavor = "tap-preferred";
-    //     bindings = <&kp>, <&space_nav_tap>;
-    // };
     s_n_s: shift_nav_space {
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_NAV_SPACE";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <300>;
+        tapping-term-ms = <150>;
+        quick_tap_ms = <100>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
         retro-tap;

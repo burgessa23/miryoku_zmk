@@ -164,18 +164,6 @@ HRM(J, LSHIFT, U_TAPPING_TERM)
         retro-tap-behavior = "TOGGLE_LAYER";
         retro-tap-param1 = <U_NAV>;
     };
-    hmr_auto_shift: hmr_auto_shift {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HMR_AUTO_SHIFT";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick_tap_ms = <100>;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
-        retro-tap-behavior = "KEY_PRESS";
-        retro-tap;
-        retro-tap-param1 = <LS(letter)>;
-    };
   };
   macros {
     mo_nav: mo_nav {

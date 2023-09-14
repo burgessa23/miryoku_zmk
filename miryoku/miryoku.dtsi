@@ -51,4 +51,5 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_kludge_tapdelay.dtsi"
 #else
   #include "miryoku_behaviors.dtsi"
+  #include "autoshift.dtsi"
 #endif

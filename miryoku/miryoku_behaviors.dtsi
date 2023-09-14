@@ -16,7 +16,7 @@
         #binding-cells = <2>; \
         flavor = "balanced"; \
         tapping-term-ms = <tapping_time>; \
-        quick-tap-ms = <QUICK_TAP_TERM>; \
+        quick-tap-ms = <175>; \
         bindings = <&kp>, <&kp>; \
         retro-tap; \
         retro-tap-behavior = "KEY_PRESS"; \

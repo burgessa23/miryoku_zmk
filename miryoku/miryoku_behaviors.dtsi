@@ -36,9 +36,9 @@ HRM(J, LSHIFT, U_TAPPING_TERM)
 #define HRS &hrasS LALT S
 #define HRD &hrasD LCTL D
 #define HRF &hrasF LSHIFT F
-#define HRJ &hrasJ RSHIFT J
-#define HRK &hrasK RCTL K
-#define HRL &hrasL RALT L
+#define HRJ &hrasJ LSHIFT J
+#define HRK &hrasK LCTL K
+#define HRL &hrasL LALT L
 #define HRSQT &hrasSQT LGUI SQT
 
 

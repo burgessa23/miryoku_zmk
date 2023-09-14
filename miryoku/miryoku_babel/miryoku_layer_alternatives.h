@@ -115,9 +115,9 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp M,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
-AS(Q),             AS(W),          AS(E),                         AS(R),                 AS(T),              AS(Y),             AS(U),           AS(I),            AS(O),             AS(P),             \
+U_HML(ESC, Q),            &kp W,          &kp E,                         &kp R,                 &kp T,              &kp Y,             &kp U,           &kp I,            &kp O,             U_HMR(BSPC, P),             \
 U_HML(LGUI, A),    U_HML(LALT, S), U_HML(LCTRL, D),               U_HML(LSHFT, F),       &kp G,              &kp H,             U_HMR(LSHFT, J), U_HMR(LCTRL, K),  U_HMR(LALT, L),    U_HMR(LGUI, SQT),   \
-AS(Z), AS(X), AS(C),                         &kp V,                 &kp B,              &kp N,             &kp M,           &kp COMMA,        U_HMR(RALT, DOT),  U_LT(U_BUTTON, SLASH),\
+U_LT(U_BUTTON, Z), U_HML(RALT, X), &kp C,                         &kp V,                 &kp B,              &kp N,             &kp M,           &kp COMMA,        U_HMR(RALT, DOT),  U_LT(U_BUTTON, SLASH),\
 U_NP,              U_NP,           U_MED_CAPS_WORD(U_MEDIA, ESC), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LT(U_NUM, RET), U_LT(U_FUN, DEL), U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \

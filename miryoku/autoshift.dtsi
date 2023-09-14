@@ -1,49 +1,49 @@
-// #define TAPPING_TERM 200
-// #define TAPPING_TERM_RING 250
-// #define TAPPING_TERM_PINKY 300
-// #define QUICK_TAP_TERM 175
-//
-//
-// #define HRM(letter, mod, tapping_time) \
-//     hras##letter: hras##letter { \
-//         compatible = "zmk,behavior-hold-tap"; \
-//         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_##letter); \
-//         #binding-cells = <2>; \
-//         flavor = "balanced"; \
-//         tapping-term-ms = <tapping_time>; \
-//         quick-tap-ms = <QUICK_TAP_TERM>; \
-//         bindings = <&kp>, <&kp>; \
-//         retro-tap; \
-//         retro-tap-behavior = "KEY_PRESS"; \
-//         retro-tap-param1 = <LS(letter)>; \
-//     }; \
-//  \
-//     hrt##letter: hrt##letter { \
-//         compatible = "zmk,behavior-tap-dance"; \
-//         label = ZMK_MACRO_STRINGIFY(hrt##letter); \
-//         #binding-cells = <0>; \
-//         tapping-term-ms = <tapping_time>; \
-//         bindings = <&hras##letter mod letter>, <&kp letter>; \
-//         trigger-each-binding; \
-//     };
-//
-//
-//
-// HRM(F, LSHIFT, TAPPING_TERM)
-// HRM(A, LGUI, TAPPING_TERM)
-// HRM(S, LALT, TAPPING_TERM)
-// HRM(D, LCTL, TAPPING_TERM)
-// HRM(K, LCTL, TAPPING_TERM)
-// HRM(L, LALT, TAPPING_TERM)
-// HRM(SQT, LGUI, TAPPING_TERM)
-// HRM(J, LSHIFT, TAPPING_TERM)
-//
-//
-// #define HRA &hrasA LGUI A
-// #define HRS &hrasS LALT S
-// #define HRD &hrasD LCTL D
-// #define HRF &hrasF LSHIFT F
-// #define HRJ &hrasJ LSHIFT J
-// #define HRK &hrasK LCTL K
-// #define HRL &hrasL LALT L
-// #define HRSQT &hrasSQT LGUI SQT
+#define TAPPING_TERM 200
+#define TAPPING_TERM_RING 250
+#define TAPPING_TERM_PINKY 300
+#define QUICK_TAP_TERM 175
+
+
+#define HRM(letter, mod, tapping_time) \
+    hras##letter: hras##letter { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_##letter); \
+        #binding-cells = <2>; \
+        flavor = "balanced"; \
+        tapping-term-ms = <tapping_time>; \
+        quick-tap-ms = <QUICK_TAP_TERM>; \
+        bindings = <&kp>, <&kp>; \
+        retro-tap; \
+        retro-tap-behavior = "KEY_PRESS"; \
+        retro-tap-param1 = <LS(letter)>; \
+    }; \
+ \
+    hrt##letter: hrt##letter { \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = ZMK_MACRO_STRINGIFY(hrt##letter); \
+        #binding-cells = <0>; \
+        tapping-term-ms = <tapping_time>; \
+        bindings = <&hras##letter mod letter>, <&kp letter>; \
+        trigger-each-binding; \
+    };
+
+
+
+HRM(F, LSHIFT, TAPPING_TERM)
+HRM(A, LGUI, TAPPING_TERM)
+HRM(S, LALT, TAPPING_TERM)
+HRM(D, LCTL, TAPPING_TERM)
+HRM(K, LCTL, TAPPING_TERM)
+HRM(L, LALT, TAPPING_TERM)
+HRM(SQT, LGUI, TAPPING_TERM)
+HRM(J, LSHIFT, TAPPING_TERM)
+
+
+#define HRA &hrasA LGUI A
+#define HRS &hrasS LALT S
+#define HRD &hrasD LCTL D
+#define HRF &hrasF LSHIFT F
+#define HRJ &hrasJ LSHIFT J
+#define HRK &hrasK LCTL K
+#define HRL &hrasL LALT L
+#define HRSQT &hrasSQT LGUI SQT

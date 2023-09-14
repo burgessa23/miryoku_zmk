@@ -28,26 +28,3 @@
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
 
 
-#define HRM(letter, mod, tapping_time) \
-    hras##letter: hras##letter { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_##letter); \
-        #binding-cells = <2>; \
-        flavor = "balanced"; \
-        tapping-term-ms = <tapping_time>; \
-        quick-tap-ms = <175>; \
-        bindings = <&kp>, <&kp>; \
-        retro-tap; \
-        retro-tap-behavior = "KEY_PRESS"; \
-        retro-tap-param1 = <LS(letter)>; \
-    }; 
-
-
-#define HRA &hrasA LGUI A
-#define HRS &hrasS LALT S
-#define HRD &hrasD LCTL D
-#define HRF &hrasF LSHIFT F
-#define HRJ &hrasJ LSHIFT J
-#define HRK &hrasK LCTL K
-#define HRL &hrasL LALT L
-#define HRSQT &hrasSQT LGUI SQT

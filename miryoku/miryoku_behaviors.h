@@ -26,3 +26,13 @@
 
 
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
+
+
+#define HRA &hrasA LGUI A
+#define HRS &hrasS LALT S
+#define HRD &hrasD LCTL D
+#define HRF &hrasF LSHIFT F
+#define HRJ &hrasJ LSHIFT J
+#define HRK &hrasK LCTL K
+#define HRL &hrasL LALT L
+#define HRSQT &hrasSQT LGUI SQT

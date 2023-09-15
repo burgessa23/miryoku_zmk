@@ -50,4 +50,5 @@ MIRYOKU_LAYER_LIST
 #else
   #include "miryoku_behaviors.dtsi"
   #include "autoshift.dtsi"
+  #include "behaviors.dtsi"
 #endif

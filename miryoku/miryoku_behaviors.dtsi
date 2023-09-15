@@ -8,14 +8,14 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 // right-hand keys
 #define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3                                      // thumb keys
 
-#define HRA &hrasA LGUI A
-#define HRS &hrasS LALT S
-#define HRD &hrasD LCTL D
-#define HRF &hrasF LSHIFT F
-#define HRJ &hrasJ LSHIFT J
-#define HRK &hrasK LCTL K
-#define HRL &hrasL LALT L
-#define HRSQT &hrasSQT LGUI SQT
+// #define HRA &hrasA LGUI A
+// #define HRS &hrasS LALT S
+// #define HRD &hrasD LCTL D
+// #define HRF &hrasF LSHIFT F
+// #define HRJ &hrasJ LSHIFT J
+// #define HRK &hrasK LCTL K
+// #define HRL &hrasL LALT L
+// #define HRSQT &hrasSQT LGUI SQT
 
 / {
   behaviors {
@@ -41,7 +41,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LC(S)>;
+        retro-tap-param1 = <LS(S)>;
     };
     hrasD: hrasD {
         compatible = "zmk,behavior-hold-tap";
@@ -53,7 +53,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LA(D)>;
+        retro-tap-param1 = <LS(D)>;
     };
     hrasF: hrasF {
         compatible = "zmk,behavior-hold-tap";
@@ -65,7 +65,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LG(F)>;
+        retro-tap-param1 = <LS(F)>;
     };
     hrasJ: hrasJ {
         compatible = "zmk,behavior-hold-tap";
@@ -89,7 +89,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LC(K)>;
+        retro-tap-param1 = <LS(K)>;
     };
     hrasL: hrasL {
         compatible = "zmk,behavior-hold-tap";
@@ -101,7 +101,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LA(L)>;
+        retro-tap-param1 = <LS(L)>;
     };
     hrasSQT: hrasSQT {
         compatible = "zmk,behavior-hold-tap";
@@ -113,7 +113,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LG(SQT)>;
+        retro-tap-param1 = <LS(SQT)>;
     };
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";

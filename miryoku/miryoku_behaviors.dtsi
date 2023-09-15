@@ -7,8 +7,114 @@
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 // left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 // right-hand keys
 #define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3                                      // thumb keys
+
+#define HRA &hrasA LGUI A
+#define HRS &hrasS LALT S
+#define HRD &hrasD LCTL D
+#define HRF &hrasF LSHIFT F
+#define HRJ &hrasJ LSHIFT J
+#define HRK &hrasK LCTL K
+#define HRL &hrasL LALT L
+#define HRSQT &hrasSQT LGUI SQT
+
 / {
   behaviors {
+    hrasA: hrasA {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_A);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LS(A)>;
+    };
+    hrasS: hrasS {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_S);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LC(S)>;
+    };
+    hrasD: hrasD {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_D);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LA(D)>;
+    };
+    hrasF: hrasF {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_F);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LG(F)>;
+    };
+    hrasJ: hrasJ {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_J);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LS(J)>;
+    };
+    hrasK: hrasK {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_K);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LC(K)>;
+    };
+    hrasL: hrasL {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_L);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LA(L)>;
+    };
+    hrasSQT: hrasSQT {
+        compatible = "zmk,behavior-hold-tap";
+        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_SQT);
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <tapping_time>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LG(SQT)>;
+    };
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";

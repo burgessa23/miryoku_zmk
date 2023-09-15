@@ -8,14 +8,16 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 // right-hand keys
 #define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3                                      // thumb keys
 
-// #define HRA &hrasA LGUI A
-// #define HRS &hrasS LALT S
-// #define HRD &hrasD LCTL D
-// #define HRF &hrasF LSHIFT F
-// #define HRJ &hrasJ LSHIFT J
-// #define HRK &hrasK LCTL K
-// #define HRL &hrasL LALT L
-// #define HRSQT &hrasSQT LGUI SQT
+#define QUICK_TAP_TERM 175
+
+#define HRA &hrasA LGUI A
+#define HRS &hrasS LALT S
+#define HRD &hrasD LCTL D
+#define HRF &hrasF LSHIFT F
+#define HRJ &hrasJ LSHIFT J
+#define HRK &hrasK LCTL K
+#define HRL &hrasL LALT L
+#define HRSQT &hrasSQT LGUI SQT
 
 / {
   behaviors {
@@ -24,7 +26,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_A);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -36,7 +38,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_S);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -48,7 +50,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_D);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -60,7 +62,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_F);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -72,7 +74,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_J);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -84,7 +86,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_K);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -96,7 +98,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_L);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;
@@ -108,7 +110,7 @@
         label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_SQT);
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <tapping_time>;
+        tapping-term-ms = <U_TAPPING_TERM>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
         retro-tap;

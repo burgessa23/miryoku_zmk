@@ -23,7 +23,7 @@
   behaviors {
     hrasA: hrasA {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_A);
+        label = "hrasA";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -35,7 +35,7 @@
     };
     hrasS: hrasS {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_S);
+        label = "hrasS";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -47,7 +47,7 @@
     };
     hrasD: hrasD {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_D);
+        label = "hrasD";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -59,7 +59,7 @@
     };
     hrasF: hrasF {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_F);
+        label = "hrasF";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -71,7 +71,7 @@
     };
     hrasJ: hrasJ {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_J);
+        label = "hrasJ";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -83,7 +83,7 @@
     };
     hrasK: hrasK {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_K);
+        label = "hrasK";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -95,7 +95,7 @@
     };
     hrasL: hrasL {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_L);
+        label = "hrasL";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;
@@ -107,7 +107,7 @@
     };
     hrasSQT: hrasSQT {
         compatible = "zmk,behavior-hold-tap";
-        label = ZMK_MACRO_STRINGIFY(HOME_ROW_AS_SQT);
+        label = "hrasSQT";
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <U_TAPPING_TERM>;

@@ -18,6 +18,8 @@
       label = STRING; \
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_##LAYER, MIRYOKU_LAYER_##LAYER) >; \
     };
+
+
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
@@ -49,4 +51,5 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_kludge_tapdelay.dtsi"
 #else
   #include "miryoku_behaviors.dtsi"
+  #include "autoshift.dtsi"
 #endif

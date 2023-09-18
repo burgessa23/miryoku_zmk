@@ -26,7 +26,7 @@
 
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
 
-
+#define AS(keycode) &as LS(keycode) keycode
 #define HRA(MOD, TAP) &hrasA MOD TAP
 #define HRS(MOD, TAP) &hrasS MOD TAP
 #define HRD(MOD, TAP) &hrasD MOD TAP

@@ -28,5 +28,11 @@
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
 
 
-#define HRA(MOD, TAP) &hrasA 0 0
-
+#define HRA(MOD, TAP) &hrasA MOD TAP
+#define HRS(MOD, TAP) &hrasS MOD TAP
+#define HRD(MOD, TAP) &hrasD MOD TAP
+#define HRF(MOD, TAP) &hrasF MOD TAP
+#define HRJ(MOD, TAP) &hrasJ MOD TAP
+#define HRK(MOD, TAP) &hrasK MOD TAP
+#define HRL(MOD, TAP) &hrasL MOD TAP
+#define HRSQT(MOD, TAP) &hrasSQT MOD TAP

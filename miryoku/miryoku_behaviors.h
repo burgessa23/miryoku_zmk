@@ -18,7 +18,6 @@
 #define U_SHFT_ESC_MEDIA(MOD, TAP) &shift_esc MOD 0
 #define U_HT2(MOD, TAP) &ht2 MOD TAP
 #define U_NST(MOD, TAP) &nst 0 TAP
-#define AS(keycode) &as LS(keycode) keycode
 #define SPNAV(MOD, TAP) &spnav 0 0
 
 
@@ -27,7 +26,7 @@
 
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
 
-
+#define AS(keycode) &as LS(keycode) keycode
 #define HRA(MOD, TAP) &hrasA MOD TAP
 #define HRS(MOD, TAP) &hrasS MOD TAP
 #define HRD(MOD, TAP) &hrasD MOD TAP
@@ -36,3 +35,4 @@
 #define HRK(MOD, TAP) &hrasK MOD TAP
 #define HRL(MOD, TAP) &hrasL MOD TAP
 #define HRSQT(MOD, TAP) &hrasSQT MOD TAP
+

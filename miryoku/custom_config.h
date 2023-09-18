@@ -59,3 +59,4 @@ XXX  K10     K11                       K12  K13               K14               
 XXX  K20     K21                       K22  K23               K24  U_HML(LS(LA(C)), ESC)             U_HMR(RCMD, LS(LG(SPACE)))  K25  K26               K27  K28           K29          XXX  \
 XXX  U_ZOOM  U_HML(LA(TAB), LG(PIPE))  K32  U_MT(LCMD, F11)  K33  K34                           K35                   K36  U_HMR(RALT, F12)  K37  &kp LG(LBKT)  U_LT(U_BUTTON, LG(RBKT)) XXX  \
 
+

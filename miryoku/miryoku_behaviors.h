@@ -26,3 +26,7 @@
 
 
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
+
+
+#define HRA(MOD, TAP) &hrasA 0 0
+

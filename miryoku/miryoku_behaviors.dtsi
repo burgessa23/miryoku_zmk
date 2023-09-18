@@ -10,7 +10,6 @@
 
 #define QUICK_TAP_TERM 175
 
-#define HRA(MOD, TAP) &hrasA LGUI A
 #define HRS &hrasS LALT S
 #define HRD &hrasD LCTL D
 #define HRF &hrasF LSHIFT F

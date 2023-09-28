@@ -10,6 +10,7 @@
 #define U_HMR(MOD, TAP) &u_hmr MOD TAP
 #define U_BAK_FWD_PIPE &u_back_fwd
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
+#define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
 #define U_RAY &u_ray
 #define U_RAY_WRAP(MOD, TAP) &ray_wrap MOD 0
 #define U_ESC_CAPS_WRAP(MOD, TAP) &esc_caps_wrap MOD 0

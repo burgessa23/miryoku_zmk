@@ -115,10 +115,10 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp M,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
-AS(Q),          AS(W),        AS(E),                         AS(R),                AS(T),              AS(Y),              AS(U),              AS(I),              AS(O),         AS(P),             \
-HRA(LGUI, A),   HRS(LALT, S), HRD(LCTL, D),                  HRF(LSHFT, F),        AS(G),              AS(H),              HRJ(LSHFT, J),      HRK(LCTL, K),       HRL(LALT, L),  HRSQT(LGUI, SQT),   \
-AS(Z),          AS(X),        AS(C),                         AS(V),                AS(B),              AS(N),              AS(M),              AS(COMMA),          AS(DOT),       AS(SLASH),\
-U_NP,           U_NP,         U_MED_CAPS_WORD(U_MEDIA, ESC), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LTNUM(U_SYM, BSPC),  U_LTNUM(U_NUM, RET),   U_LT(U_FUN, DEL),   U_NP,          U_NP
+AS(Q),          AS(W),        AS(E),                         AS(R),                AS(T),              AS(Y),              AS(U),                 AS(I),              AS(O),         AS(P),             \
+HRA(LGUI, A),   HRS(LALT, S), HRD(LCTL, D),                  HRF(LSHFT, F),        AS(G),              AS(H),              HRJ(LSHFT, J),         HRK(LCTL, K),       HRL(LALT, L),  HRSQT(LGUI, SQT),   \
+AS(Z),          AS(X),        AS(C),                         AS(V),                AS(B),              AS(N),              AS(M),                 AS(COMMA),          AS(DOT),       AS(SLASH),\
+U_NP,           U_NP,         U_MED_CAPS_WORD(U_MEDIA, ESC), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC),  U_LTNUM(U_NUM, RET),   U_LT(U_FUN, DEL),   U_NP,          U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \

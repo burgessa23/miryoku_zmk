@@ -2,7 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 outboard_repository=burgessa23/zmk-config
-outboard_ref=main
+outboard_ref=hillside46
 outboard_from=config/boards/shields/hillside46
 outboard_to=boards/shields/hillside46
 

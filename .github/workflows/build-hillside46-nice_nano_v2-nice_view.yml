@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Hillside52 nice_nano_v2 nice_view'
+name: 'Build Hillside46 nice_nano_v2 nice_view'
 on: workflow_dispatch
 jobs:
   build:

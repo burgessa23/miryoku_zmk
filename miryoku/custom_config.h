@@ -56,7 +56,7 @@ nice_view_spi: &spi0 {
 )\
 &kp ESC    K00  K01  K02  K03  K04                                                                                  K05               K06  K07  K08  K09  U_LT(U_BUTTON, BSPC)     \
 U_MT(LSHFT, &u_caps_word)  K10  K11  K12  K13  K14                                                                                  K15               K16  K17  K18  K19  U_MT(RSHFT, &u_caps_word)    \
-U_ZOOM     K20  K21  K22  K23  K24             U_HML(LS(LA(C)), ESC)                 U_HMR(LA(TAB), LS(LG(SPACE)))  K25               K26  K27  K28  K29  U_BAK_FWD_PIPE  \
+U_MT(LCTRL, U_ZOOM)     K20  K21  K22  K23  K24             U_HML(LS(LA(C)), ESC)                 U_HMR(LA(TAB), LS(LG(SPACE)))  K25               K26  K27  K28  K29  U_BAK_FWD_PIPE  \
                           K32  U_MT(LCMD, F11) K33                    K34       K35  K36                            U_HMR(LALT, F12)  K37                              \
 
 

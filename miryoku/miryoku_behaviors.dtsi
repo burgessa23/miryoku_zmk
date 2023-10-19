@@ -343,3 +343,6 @@ ZMK_BEHAVIOR(ht2, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+&num_word {
+    layers = <U_NUM>;  // replace NUM by the location of numbers layer
+};

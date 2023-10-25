@@ -137,6 +137,21 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
+    u_bf: u_bf {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_bf";
+        #binding-cells = <0>;
+        tapping-term-ms = <350>;
+        bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>, <&kp LG(PIPE)>;
+    };
+    bf_wrap: bf_wrap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "BF_WRAP";
+        #binding-cells = <2>;
+        tapping_term_ms = <550>;
+        flavor = "balanced";
+        bindings = <&kp>, <&u_bf>;
+    };
     u_ray: u_ray {
         compatible = "zmk,behavior-tap-dance";
         label = "u_ray";
@@ -152,24 +167,24 @@
         flavor = "balanced";
         bindings = <&kp>, <&u_ray>;
     };
-    u_esc_caps: u_esc_caps {
-        compatible = "zmk,behavior-tap-dance";
-        label = "u_esc_caps";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp ESC>, <&u_caps_word>;
+    U_ESC_CAPS: U_ESC_CAPS {
+        COMPATIBLE = "ZMK,BEHAVIOR-TAP-DANCE";
+        LABEL = "U_ESC_CAPS";
+        #BINDING-CELLS = <0>;
+        TAPPING-TERM-MS = <200>;
+        BINDINGS = <&KP ESC>, <&U_CAPS_WORD>;
     };
-    shft_num_word: shft_num_word {
-        compatible = "zmk,behavior-hold-tap";
-        label = "SHFT_NUM_WORD";
-        #binding-cells = <2>;
-        tapping_term_ms = <250>;
-        global-quick-tap-ms = <150>;         // requires PR #1387
-        flavor = "hold-preferred";
-        bindings = <&kp>, <&num_word>;
+    SHFT_NUM_WORD: SHFT_NUM_WORD {
+        COMPATIBLE = "ZMK,BEHAVIOR-HOLD-TAP";
+        LABEL = "SHFT_NUM_WORD";
+        #BINDING-CELLS = <2>;
+        TAPPING_TERM_MS = <250>;
+        GLOBAL-QUICK-TAP-MS = <150>;         // REQUIRES PR #1387
+        FLAVOR = "HOLD-PREFERRED";
+        BINDINGS = <&KP>, <&NUM_WORD>;
     };
-    shft_caps_word: shft_caps_word {
-        compatible = "zmk,behavior-hold-tap";
+    SHFT_CAPS_WORD: SHFT_CAPS_WORD {
+        COMPATIBLE = "ZMK,BEHAVIOR-HOLD-TAP";
         label = "SHFT_CAPS_WORD";
         #binding-cells = <2>;
         tapping_term_ms = <250>;

@@ -375,7 +375,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_FUN \
 &kp F1,           &kp F2,            &kp F3,            &kp F4,            &kp F5,            &kp F6,            &kp F7,        &kp F8,         &kp F9,       &kp F10,            \
-&kp F11,          &kp F12,           &kp F13,           &kp F14,           &kp SLCK,          &kp NLCK,          &kp LSHFT,     &kp LCTRL,      &kp LALT,     &kp LGUI,          \
+&kp F11,          &kp F12,           &kp F13,           &kp F14,           &kp SLCK,          &kp LNLCK,          &kp LSHFT,     &kp LCTRL,      &kp LALT,     &kp LGUI,          \
 U_UND,            U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,         U_CPY,          U_CUT,        U_UND,              \
 U_NP,             U_NP,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NA,              U_NA,          U_NA,           U_NP,         U_NP
 

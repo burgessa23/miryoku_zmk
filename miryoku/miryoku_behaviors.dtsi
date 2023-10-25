@@ -172,7 +172,7 @@
         LABEL = "U_ESC_CAPS";
         #BINDING-CELLS = <0>;
         TAPPING-TERM-MS = <200>;
-        BINDINGS = <&KP ESC>, <&U_CAPS_WORD>;
+        BINDINGS = <&kp ESC>, <&U_CAPS_WORD>;
     };
     SHFT_NUM_WORD: SHFT_NUM_WORD {
         COMPATIBLE = "ZMK,BEHAVIOR-HOLD-TAP";
@@ -181,7 +181,7 @@
         TAPPING_TERM_MS = <250>;
         GLOBAL-QUICK-TAP-MS = <150>;         // REQUIRES PR #1387
         FLAVOR = "HOLD-PREFERRED";
-        BINDINGS = <&KP>, <&NUM_WORD>;
+        BINDINGS = <&kp>, <&NUM_WORD>;
     };
     SHFT_CAPS_WORD: SHFT_CAPS_WORD {
         COMPATIBLE = "ZMK,BEHAVIOR-HOLD-TAP";

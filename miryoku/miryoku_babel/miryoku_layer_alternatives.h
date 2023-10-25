@@ -361,7 +361,7 @@ U_NA,              &kp RALT,          &u_to_U_MOUSE,     &u_to_U_SYM,       U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp UNDER,         &kp LPAR,          &kp RPAR,          U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_SYM \
-&kp EXCL,     &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,     &kp CARET,         &kp AMPS,          &kp ASTRK,         &kp LPAR,         &kp RPAR,
+&kp EXCL,     &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,     &kp CARET,         &kp AMPS,          &kp ASTRK,         &kp LPAR,         &kp RPAR,          \
 &kp LGUI,     &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,         &kp LGUI,          \
 U_NA,         &kp RCMD,          &u_to_U_NUM,       &u_to_U_BASE,      U_NA,          U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,              \
 U_NP,         U_NP,              U_NA,              U_NA,              &kp UNDER,     U_NA,              U_NA,              U_NA,              U_NP,             U_NP

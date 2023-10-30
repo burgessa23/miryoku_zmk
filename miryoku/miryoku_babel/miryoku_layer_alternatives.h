@@ -118,7 +118,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 AS(Q),          AS(W),  AS(E),                AS(R),                AS(T),              AS(Y),             AS(U),                 AS(I),              AS(O),    AS(P),             \
 HRA(LGUI, A),   AS(S),  HRD(LCTL, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(LSHFT, J),         HRK(LCTL, K),       AS(L),    HRSQT(LGUI, SQT),   \
 AS(Z),          AS(X),  AS(C),                AS(V),                AS(B),              AS(N),             AS(M),                 AS(COMMA),          AS(DOT),  AS(SLASH),\
-U_NP,           U_NP,   U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC),  U_LTNUM(U_NUM, RET),   U_LT(U_FUN, SEMI),  U_NP,     U_NP
+U_NP,           U_NP,   U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   U_LT(U_FUN, SEMI),  U_NP,     U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -350,8 +350,8 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_NUM \
 AS(N1),          AS(N2),        AS(N3),         AS(N4),          AS(N5),          AS(N6),            AS(N7),            AS(N8),            AS(N9),            AS(N0),            \
 &kp LGUI,        &kp LALT,      &kp LCTRL,      &kp LSHFT,       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-AS(GRAVE),       &kp RGUI,      &u_to_U_FUN,    &u_to_U_BASE,    AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_BOOT,            \
-U_NP,            U_NP,          U_NA,           U_NA,            &kp MINUS,       &kp BSLH,              U_NA,              U_NA,              U_NP,              U_NP
+AS(GRAVE),       &kp RGUI,      &u_to_U_FUN,    &u_to_U_BASE,    AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &kp COMMA,         &kp DOT,           U_BOOT,            \
+U_NP,            U_NP,          U_NA,           U_NA,            &kp MINUS,       &kp BSLH,          U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \

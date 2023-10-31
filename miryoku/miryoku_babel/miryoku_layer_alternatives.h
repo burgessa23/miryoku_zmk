@@ -351,7 +351,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 AS(N1),          AS(N2),        AS(N3),         AS(N4),          AS(N5),          AS(N6),            AS(N7),            AS(N8),            AS(N9),            AS(N0),            \
 &kp LGUI,        &kp LALT,      &kp LCTRL,      &kp LSHFT,       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 AS(GRAVE),       &kp RGUI,      &u_to_U_FUN,    &u_to_U_BASE,    AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &kp COMMA,         &kp DOT,           U_BOOT,            \
-U_NP,            U_NP,          U_NA,           U_NA,            &kp MINUS,       &kp BSLH,          U_NA,              U_NA,              U_NP,              U_NP
+U_NP,            U_NP,          &trans,         U_NA,            &kp MINUS,       &kp BSLH,          U_NA,              &kp COLON,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \

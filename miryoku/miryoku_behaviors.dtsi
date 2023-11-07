@@ -262,6 +262,13 @@
         retro-tap-behavior = "TOGGLE_LAYER";
         retro-tap-param1 = <U_NAV>;
     };
+    col_semi: colon_semicolon {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COLON_SEMICOLON";
+        #binding-cells = <0>;
+        bindings = <&kp COLON>, <&kp SEMI>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
   macros {
     mo_nav: mo_nav {
@@ -293,13 +300,6 @@
             , <&macro_pause_for_release>
             , <&macro_release &s_nav U_NAV LSHFT>
             ;
-    };
-    col_semi: colon_semicolon {
-        compatible = "zmk,behavior-mod-morph";
-        label = "COLON_SEMICOLON";
-        #binding-cells = <0>;
-        bindings = <&kp COLON>, <&kp SEMI>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
 };

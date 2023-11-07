@@ -294,6 +294,13 @@
             , <&macro_release &s_nav U_NAV LSHFT>
             ;
     };
+    col_semi: colon_semicolon {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COLON_SEMICOLON";
+        #binding-cells = <0>;
+        bindings = <&kp COLON>, <&kp SEMI>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 };
 

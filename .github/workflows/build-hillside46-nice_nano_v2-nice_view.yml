@@ -2,7 +2,9 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'Build Hillside46 nice_nano_v2 nice_view'
-on: workflow_dispatch
+on:
+  push:
+  workflow_dispatch:
 jobs:
   build:
     uses: ./.github/workflows/main.yml

@@ -273,9 +273,9 @@ U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,           &kp RET,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,                      U_CPY,       U_CUT,     U_UND,             \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_UND,             U_CUT,                      U_CPY,       U_PST,     U_RDO,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,                   &kp DOWN,    &kp UP,    &kp RIGHT,         \
-U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           U_MT(LG(LEFT), LA(LEFT)),   &kp PG_DN,   &kp PG_UP, U_MT(LG(RIGHT), LA(RIGHT)),           \
+U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           U_MT(&kp HOME, LA(LEFT)),   &kp PG_DN,   &kp PG_UP, U_MT(&kp END, LA(RIGHT)),           \
 U_NP,              U_NP,              U_NA,              &tog U_NAV,        U_NA,              &kp BSPC,          &kp RET,                    U_NP,        &kp DEL,   U_NP
 
 

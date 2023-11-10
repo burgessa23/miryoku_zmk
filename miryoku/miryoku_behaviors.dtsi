@@ -370,60 +370,70 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 };
 
 ZMK_BEHAVIOR(asn_q, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(Q)>, <&num_q>;
 )
 
 ZMK_BEHAVIOR(asn_w, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(W)>, <&num_w>;
 )
 
 ZMK_BEHAVIOR(asn_e, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(E)>, <&num_e>;
 )
 
 ZMK_BEHAVIOR(asn_r, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(R)>, <&num_r>;
 )
 
 ZMK_BEHAVIOR(asn_t, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(T)>, <&num_t>;
 )
 
 ZMK_BEHAVIOR(asn_y, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(Y)>, <&num_y>;
 )
 
 ZMK_BEHAVIOR(asn_u, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(U)>, <&num_u>;
 )
 
 ZMK_BEHAVIOR(asn_i, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(I)>, <&num_i>;
 )
 
 ZMK_BEHAVIOR(asn_o, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(O)>, <&num_o>;
 )
 
 ZMK_BEHAVIOR(asn_p, hold_tap,
+    flavor = "tap-preferred";
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp LS(P)>, <&num_p>;

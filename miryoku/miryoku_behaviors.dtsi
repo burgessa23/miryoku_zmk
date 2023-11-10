@@ -372,61 +372,61 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 ZMK_BEHAVIOR(asn_q, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(Q)>, <&num_q>;
+    bindings = <&kp LS(Q)>, <&num_q>;
 )
 
 ZMK_BEHAVIOR(asn_w, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(W)>, <&num_w>;
+    bindings = <&kp LS(W)>, <&num_w>;
 )
 
 ZMK_BEHAVIOR(asn_e, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(E)>, <&num_e>;
+    bindings = <&kp LS(E)>, <&num_e>;
 )
 
 ZMK_BEHAVIOR(asn_r, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(R)>, <&num_r>;
+    bindings = <&kp LS(R)>, <&num_r>;
 )
 
 ZMK_BEHAVIOR(asn_t, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(T)>, <&num_t>;
+    bindings = <&kp LS(T)>, <&num_t>;
 )
 
 ZMK_BEHAVIOR(asn_y, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(Y)>, <&num_y>;
+    bindings = <&kp LS(Y)>, <&num_y>;
 )
 
 ZMK_BEHAVIOR(asn_u, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(U)>, <&num_u>;
+    bindings = <&kp LS(U)>, <&num_u>;
 )
 
 ZMK_BEHAVIOR(asn_i, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(I)>, <&num_i>;
+    bindings = <&kp LS(I)>, <&num_i>;
 )
 
 ZMK_BEHAVIOR(asn_o, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(O)>, <&num_o>;
+    bindings = <&kp LS(O)>, <&num_o>;
 )
 
 ZMK_BEHAVIOR(asn_p, hold_tap,
     tapping-term-ms = <350>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
-    bindings = <LS(P)>, <&num_p>;
+    bindings = <&kp LS(P)>, <&num_p>;
 )
 
 

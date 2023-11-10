@@ -269,7 +269,7 @@
         bindings = <&kp COLON>, <&kp SEMI>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    asn_q: auto_shift {
+    asn_q: asn_q {
         compatible = "zmk,behavior-hold-tap";
         label = "ASN_Q";
         #binding-cells = <2>;
@@ -277,6 +277,7 @@
         quick_tap_ms = <50>;
         flavor = "tap-preferred";
         bindings = <&kp LS(Q)>, <&num_q>;
+    };
   };
   macros {
     mo_nav: mo_nav {

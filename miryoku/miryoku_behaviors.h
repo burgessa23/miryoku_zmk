@@ -40,13 +40,13 @@
 #define HRSQT(MOD, TAP) &hrasSQT MOD TAP
 
 #define ASN_Q(MOD, TAP) &asn_q LS(Q) TAP
-#define ASN_W(MOD, TAP) &asn_w MOD TAP
-#define ASN_E(MOD, TAP) &asn_e MOD TAP
-#define ASN_R(MOD, TAP) &asn_r MOD TAP
-#define ASN_T(MOD, TAP) &asn_t MOD TAP
-#define ASN_Y(MOD, TAP) &asn_y MOD TAP
-#define ASN_U(MOD, TAP) &asn_u MOD TAP
-#define ASN_I(MOD, TAP) &asn_i MOD TAP
-#define ASN_O(MOD, TAP) &asn_o MOD TAP
-#define ASN_P(MOD, TAP) &asn_p MOD TAP
+#define ASN_W(MOD, TAP) &asn_w LS(W) TAP
+#define ASN_E(MOD, TAP) &asn_e LS(E) TAP
+#define ASN_R(MOD, TAP) &asn_r LS(R) TAP
+#define ASN_T(MOD, TAP) &asn_t LS(T) TAP
+#define ASN_Y(MOD, TAP) &asn_y LS(Y) TAP
+#define ASN_U(MOD, TAP) &asn_u LS(U) TAP
+#define ASN_I(MOD, TAP) &asn_i LS(I) TAP
+#define ASN_O(MOD, TAP) &asn_o LS(O) TAP
+#define ASN_P(MOD, TAP) &asn_p LS(P) TAP
 

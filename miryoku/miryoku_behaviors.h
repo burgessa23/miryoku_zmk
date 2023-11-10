@@ -39,7 +39,7 @@
 #define HRL(MOD, TAP) &hrasL MOD TAP
 #define HRSQT(MOD, TAP) &hrasSQT MOD TAP
 
-#define ASN_Q(MOD, TAP) &asn_q MOD TAP
+#define ASN_Q(MOD, TAP) &asn_q LS(Q) TAP
 #define ASN_W(MOD, TAP) &asn_w MOD TAP
 #define ASN_E(MOD, TAP) &asn_e MOD TAP
 #define ASN_R(MOD, TAP) &asn_r MOD TAP

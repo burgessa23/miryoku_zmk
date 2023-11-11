@@ -450,52 +450,52 @@ ZMK_BEHAVIOR(asn_p, hold_tap,
 
 
 ZMK_BEHAVIOR(num_q, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp Q>, <&kp N1>;
 )
 
 ZMK_BEHAVIOR(num_w, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp W>, <&kp N2>;
 )
 
 ZMK_BEHAVIOR(num_e, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp E>, <&kp N3>;
 )
 
 ZMK_BEHAVIOR(num_r, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp R>, <&kp N4>;
 )
 
 ZMK_BEHAVIOR(num_t, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp T>, <&kp N5>;
 )
 
 ZMK_BEHAVIOR(num_y, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp Y>, <&kp N6>;
 )
 
 ZMK_BEHAVIOR(num_u, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp U>, <&kp N7>;
 )
 
 ZMK_BEHAVIOR(num_i, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp I>, <&kp N8>;
 )
 
 ZMK_BEHAVIOR(num_o, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp O>, <&kp N9>;
 )
 
 ZMK_BEHAVIOR(num_p, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
     bindings = <&kp P>, <&kp N0>;
 )
 

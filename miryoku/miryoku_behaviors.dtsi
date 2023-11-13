@@ -110,6 +110,18 @@
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(SQT)>;
     };
+    clnasFN: clnasFN {
+        compatible = "zmk,behavior-hold-tap";
+        label = "clnasFN";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <QUICK_TAP_TERM>;
+        bindings = <&mo>, <&kp>;
+        retro-tap;
+        retro-tap-behavior = "KEY_PRESS";
+        retro-tap-param1 = <LS(SEMI)>;
+    };
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";
@@ -378,6 +390,13 @@ ZMK_BEHAVIOR(ht2, hold_tap,
     layers = <U_NUM>;  // replace NUM by the location of numbers layer
 };
 
+ZMK_BEHAVIOR(asn, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <50>;                // repeat on tap-into-hold
+    bindings = <&kp>, <&kp>;
+)
+
 ZMK_BEHAVIOR(asn_q, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <350>;
@@ -450,52 +469,52 @@ ZMK_BEHAVIOR(asn_p, hold_tap,
 
 
 ZMK_BEHAVIOR(num_q, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp Q>, <&kp N1>;
 )
 
 ZMK_BEHAVIOR(num_w, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp W>, <&kp N2>;
 )
 
 ZMK_BEHAVIOR(num_e, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp E>, <&kp N3>;
 )
 
 ZMK_BEHAVIOR(num_r, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp R>, <&kp N4>;
 )
 
 ZMK_BEHAVIOR(num_t, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp T>, <&kp N5>;
 )
 
 ZMK_BEHAVIOR(num_y, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp Y>, <&kp N6>;
 )
 
 ZMK_BEHAVIOR(num_u, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp U>, <&kp N7>;
 )
 
 ZMK_BEHAVIOR(num_i, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp I>, <&kp N8>;
 )
 
 ZMK_BEHAVIOR(num_o, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp O>, <&kp N9>;
 )
 
 ZMK_BEHAVIOR(num_p, tap_dance,
-    tapping-term-ms = <175>;
+    tapping-term-ms = <200>;
     bindings = <&kp P>, <&kp N0>;
 )
 

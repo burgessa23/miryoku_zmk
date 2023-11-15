@@ -381,7 +381,7 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 
 ZMK_BEHAVIOR(asn, hold_tap,
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <225>;
     quick-tap-ms = <50>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
 )

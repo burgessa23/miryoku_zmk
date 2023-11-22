@@ -190,17 +190,17 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHFT_NUM_WORD";
         #binding-cells = <2>;
-        tapping_term_ms = <200>;
+        tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&num_word>;
+        bindings = <&kp>, <&none_num_word>;
     };
     shft_caps_word: shft_caps_word {
         compatible = "zmk,behavior-hold-tap";
         label = "SHFT_CAPS_WORD";
         #binding-cells = <2>;
-        tapping_term_ms = <200>;
+        tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&u_caps_word>;
+        bindings = <&kp>, <&none_caps_word>;
     };
     u_sym_bspc: u_sym_bspc {
         compatible = "zmk,behavior-tap-dance";
@@ -386,3 +386,12 @@ ZMK_BEHAVIOR(asn, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+ZMK_BEHAVIOR(none_caps_word, tap_dance,
+    tapping-term-ms = <250>;
+    bindings = <&none>, <&u_caps_word>;
+)
+
+ZMK_BEHAVIOR(none_num_word, tap_dance,
+    tapping-term-ms = <250>;
+    bindings = <&none>, <&num_word>;
+)

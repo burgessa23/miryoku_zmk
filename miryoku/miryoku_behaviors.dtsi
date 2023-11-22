@@ -190,7 +190,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHFT_NUM_WORD";
         #binding-cells = <2>;
-        tapping_term_ms = <250>;
+        tapping_term_ms = <200>;
         flavor = "hold-preferred";
         bindings = <&kp>, <&num_word>;
     };
@@ -198,7 +198,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHFT_CAPS_WORD";
         #binding-cells = <2>;
-        tapping_term_ms = <250>;
+        tapping_term_ms = <200>;
         flavor = "hold-preferred";
         bindings = <&kp>, <&u_caps_word>;
     };
@@ -228,7 +228,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "AUTO_SHIFT";
         #binding-cells = <2>;
-        tapping_term_ms = <350>;
+        tapping_term_ms = <250>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;

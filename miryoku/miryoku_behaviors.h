@@ -61,3 +61,7 @@
 #define ASN_I &asn N8 I
 #define ASN_O &asn N9 O
 #define ASN_P &asn N0 P
+
+
+#define U_LEFT &u_left
+#define U_RIGHT &u_right

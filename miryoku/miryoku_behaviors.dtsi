@@ -395,3 +395,13 @@ ZMK_BEHAVIOR(none_num_word, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&none>, <&num_word>;
 )
+
+ZMK_BEHAVIOR(u_left, tap_dance,)
+    tapping-term-ms = <250>;
+    bindings = <&kp LA(LEFT)>, <&kp LG(LEFT)>;
+)
+
+ZMK_BEHAVIOR(u_right, tap_dance,)
+    tapping-term-ms = <250>;
+    bindings = <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
+)

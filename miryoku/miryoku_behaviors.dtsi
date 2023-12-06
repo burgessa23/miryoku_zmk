@@ -380,11 +380,10 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 };
 
 ZMK_BEHAVIOR(asn, hold_tap,
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <250>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
-)
+
 
 ZMK_BEHAVIOR(none_caps_word, tap_dance,
     tapping-term-ms = <250>;

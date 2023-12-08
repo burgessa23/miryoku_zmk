@@ -383,7 +383,7 @@ ZMK_BEHAVIOR(asn, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <250>;
     bindings = <&kp>, <&kp>;
-
+)
 
 ZMK_BEHAVIOR(none_caps_word, tap_dance,
     tapping-term-ms = <250>;

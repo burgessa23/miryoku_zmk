@@ -30,7 +30,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "hrasS";
         #binding-cells = <2>;
-        flavor = "balanced";
+        flavor = "tap-preferred";
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
@@ -90,7 +90,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "hrasL";
         #binding-cells = <2>;
-        flavor = "balanced";
+        flavor = "tap-preferred";
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;

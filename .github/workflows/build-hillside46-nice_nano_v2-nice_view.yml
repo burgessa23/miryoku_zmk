@@ -12,4 +12,4 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["hillside46_left nice_view_adapter nice_view","hillside46_right nice_view_adapter nice_view"]'
-      branches: '["burgessa23/zmk/animated_widgets petejohanson/zmk/feat/pointers-move-scroll"]'
+      branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'

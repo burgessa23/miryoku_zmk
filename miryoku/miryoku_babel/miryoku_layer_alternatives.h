@@ -116,7 +116,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
 ASN_Q,          ASN_W,         ASN_E,                ASN_R,                ASN_T,              ASN_Y,             ASN_U,                 ASN_I,              ASN_O,         ASN_P,             \
-HRA(LGUI, A),   HRS(LALT, S),  HRD(LCTL, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(LSHFT, J),         HRK(LCTL, K),       HRL(LALT, L),  HRSQT(LGUI, SQT),   \
+HRA(LCTL, A),   HRS(LALT, S),  HRD(LGUI, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(LSHFT, J),         HRK(LGUI, K),       HRL(LALT, L),  HRSQT(LCTL, SQT),   \
 AS(Z),          AS(X),         AS(C),                AS(V),                AS(B),              AS(N),             AS(M),                 AS(COMMA),          AS(DOT),       AS(SLASH),\
 U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   CLN_FN(U_FUN, SEMI),  U_NP,          U_NP
 
@@ -274,7 +274,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_NAV \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_UND,             U_CUT,      U_CPY,       U_PST,     U_RDO,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,   &kp DOWN,    &kp UP,    &kp RIGHT,         \
+&kp LCTRL,          &kp LALT,          &kp LGUI,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,   &kp DOWN,    &kp UP,    &kp RIGHT,         \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           U_LEFT,     &kp PG_DN,   &kp PG_UP, U_RIGHT,           \
 U_NP,              U_NP,              U_NA,              &tog U_NAV,        U_NA,              &kp BSPC,          &kp RET,    U_NP,        &kp DEL,   U_NP
 
@@ -305,7 +305,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_MOUSE \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
+&kp LCTRL,          &kp LALT,          &kp LGUI,         &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
 
@@ -336,7 +336,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_MEDIA \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LC(UP),        &kp LC(LEFT),      &kp F14,           &kp F15,           &kp LC(RIGHT),         \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_EP_TOG,          &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        \
+&kp LCTRL,          &kp LALT,          &kp LGUI,         &kp LSHFT,         U_NA,              U_EP_TOG,          &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        \
 U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &u_out_tog,        &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
 
@@ -349,7 +349,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_NUM \
 AS(N1),          AS(N2),        AS(N3),         AS(N4),          AS(N5),          AS(N6),            AS(N7),            AS(N8),            AS(N9),            AS(N0),            \
-&kp LGUI,        &kp LALT,      &kp LCTRL,      &kp LSHFT,       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+&kp LCTRL,        &kp LALT,      &kp LGUI,      &kp LSHFT,       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LGUI,         &kp LALT,          &kp LCTRL,          \
 AS(GRAVE),       &kp RGUI,      &u_to_U_FUN,    &u_to_U_BASE,    AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &kp COMMA,         &kp DOT,           U_BOOT,            \
 U_NP,            U_NP,          &trans,         &kp MINUS,       U_NA,            U_NA,              &kp BSLH,          &kp COLON,         U_NP,              U_NP
 
@@ -362,7 +362,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_SYM \
 &kp EXCL,     &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,     &kp CARET,    &kp AMPS,          &kp ASTRK,         &kp LPAR,         &kp RPAR,          \
-&kp LGUI,     &kp LALT,          &kp LCTRL,         &kp LSHFT,         &kp PLUS,      &kp UNDER,    &kp LSHFT,         &kp LCTRL,         &kp LALT,         &kp LGUI,          \
+&kp LCTRL,     &kp LALT,          &kp LGUI,         &kp LSHFT,         &kp PLUS,      &kp UNDER,    &kp LSHFT,         &kp LGUI,         &kp LALT,         &kp LCTRL,          \
 U_NA,         &kp RCMD,          &u_to_U_NUM,       &u_to_U_BASE,      &kp LBRC,      &kp RBRC,     &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,              \
 U_NP,         U_NP,              U_NA,              &kp UNDER,         U_NA,          U_NA,         &kp PIPE,          U_NA,              U_NP,             U_NP
 
@@ -375,14 +375,14 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_ALTERNATIVES_FUN \
 &kp F1,           &kp F2,            &kp F3,            &kp F4,            &kp F5,            &kp F6,            &kp F7,        &kp F8,         &kp F9,       &kp F10,            \
-&kp F11,          &kp F12,           &kp F13,           &kp F14,           &kp SLCK,          &kp LNLCK,          &kp LSHFT,     &kp LCTRL,      &kp LALT,     &kp LGUI,          \
+&kp F11,          &kp F12,           &kp F13,           &kp F14,           &kp SLCK,          &kp LNLCK,          &kp LSHFT,     &kp LGUI,      &kp LALT,     &kp LCTRL,          \
 U_UND,            U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,         U_CPY,          U_CUT,        U_UND,              \
 U_NP,             U_NP,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NA,              U_NA,          U_NA,           U_NP,         U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_UND,             U_CUT,             U_CPY,             U_PST,           U_RDO,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NU,              U_NU,              &kp LEFT,          &kp DOWN,          &kp UP,          &kp RIGHT,          \
+&kp LCTRL,          &kp LALT,          &kp LGUI,         &kp LSHFT,         U_NU,              U_NU,              &kp LEFT,          &kp DOWN,          &kp UP,          &kp RIGHT,          \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_UND,             &kp LC(LEFT),      &kp LC(DOWN),      &kp LC(UP),      &kp LC(RIGHT),        \
 U_NP,              U_NP,              U_BTN3,            U_BTN2,            U_BTN1,            U_BTN1,            U_BTN2,            U_BTN3,            U_NP,            U_NP
 

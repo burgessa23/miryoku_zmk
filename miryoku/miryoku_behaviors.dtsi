@@ -22,6 +22,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(A)>;
@@ -34,6 +36,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(S)>;
@@ -46,6 +50,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(D)>;
@@ -57,6 +63,8 @@
         flavor = "balanced";
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
@@ -70,6 +78,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(J)>;
@@ -82,6 +92,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(K)>;
@@ -94,6 +106,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(L)>;
@@ -106,6 +120,8 @@
         tapping-term-ms = <250>;
         quick-tap-ms = <QUICK_TAP_TERM>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <KEYS_L THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(SQT)>;
@@ -122,6 +138,8 @@
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(SEMI)>;
     };
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+        hold-trigger-on-release;             // delay positional check until key-release
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";

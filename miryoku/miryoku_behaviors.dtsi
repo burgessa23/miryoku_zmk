@@ -255,8 +255,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "SHIFT_SPACE";
         #binding-cells = <2>;
-        tapping_term_ms = <250>;
-        quick_tap_ms = <150>;
+        tapping_term_ms = <150>;
         global-quick-tap;
         flavor = "balanced";
         bindings = <&s_nav_wrap>, <&kp>;

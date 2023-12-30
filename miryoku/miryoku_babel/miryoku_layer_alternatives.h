@@ -364,7 +364,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 &kp EXCL,     &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,     &kp CARET,    &kp AMPS,          &kp ASTRK,         &kp LPAR,         &kp RPAR,          \
 &kp LGUI,     &kp LALT,          &kp LCTRL,         &kp LSHFT,         &kp PLUS,      &kp UNDER,    &kp LSHFT,         &kp LCTRL,         &kp LALT,         &kp LGUI,          \
 U_NA,         &kp RCMD,          &u_to_U_NUM,       &u_to_U_BASE,      &kp LBRC,      &kp RBRC,     &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,              \
-U_NP,         U_NP,              U_NA,              &kp UNDER,         U_NA,          U_NA,         &kp PIPE,          U_NA,              U_NP,             U_NP
+U_NP,         U_NP,              U_NA,              &kp UNDER,         U_NA,          U_NA,         &kp BSLH,          U_NA,              U_NP,             U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_FUN_FLIP \

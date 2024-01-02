@@ -423,12 +423,12 @@ ZMK_BEHAVIOR(asn, hold_tap,
 
 ZMK_BEHAVIOR(none_caps_word, tap_dance,
     tapping-term-ms = <250>;
-    bindings = <&none>, <&u_caps_word>;
+    bindings = <&u_caps_word>, <&rev_swapper>;
 )
 
 ZMK_BEHAVIOR(none_num_word, tap_dance,
     tapping-term-ms = <250>;
-    bindings = <&none>, <&num_word>;
+    bindings = <&num_word>, <&swapper>;
 )
 
 ZMK_BEHAVIOR(u_left, tap_dance,
@@ -442,3 +442,12 @@ ZMK_BEHAVIOR(u_right, tap_dance,
 )
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
 ZMK_COMBO(cmb_rshft,  &kp LSHFT, 31 43, ALL)
+
+// Alt+Tab swapper, requires PR #1366
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
+)
+
+ZMK_BEHAVIOR(rev_swapper, tri_state,
+    bindings = <&kt LS(LCMD)>, <&kp TAB>, <&kt LS(LCMD)>;
+)

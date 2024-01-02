@@ -52,15 +52,18 @@
 // #define ASN_P &asn_p LS(P) 0
 
 #define ASN_Q &asn N1 Q
-#define ASN_W &asn N2 W
-#define ASN_E &asn N3 E
-#define ASN_R &asn N4 R
+#define ASN_W &asn N7 W
+#define ASN_E &asn N8 E
+#define ASN_R &asn N9 R
 #define ASN_T &asn N5 T
 #define ASN_Y &asn N6 Y
 #define ASN_U &asn N7 U
 #define ASN_I &asn N8 I
 #define ASN_O &asn N9 O
 #define ASN_P &asn N0 P
+#define ASN_X &asn N1 X
+#define ASN_C &asn N2 C
+#define ASN_V &asn N3 V
 
 
 #define U_SWAPR &swapper

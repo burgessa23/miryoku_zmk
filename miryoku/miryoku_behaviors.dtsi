@@ -59,7 +59,7 @@
         hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LS(S)>;
+        retro-tap-param1 = <N4>;
     };
     hrasD: hrasD {
         compatible = "zmk,behavior-hold-tap";
@@ -73,7 +73,7 @@
         hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LS(D)>;
+        retro-tap-param1 = <N5>;
     };
     hrasF: hrasF {
         compatible = "zmk,behavior-hold-tap";
@@ -87,7 +87,7 @@
         bindings = <&kp>, <&kp>;
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <LS(F)>;
+        retro-tap-param1 = <N6>;
     };
     hrasJ: hrasJ {
         compatible = "zmk,behavior-hold-tap";

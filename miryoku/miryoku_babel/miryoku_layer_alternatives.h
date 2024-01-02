@@ -115,10 +115,16 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp M,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
-ASN_Q,          ASN_W,         ASN_E,                ASN_R,                ASN_T,              ASN_Y,             ASN_U,                 ASN_I,              ASN_O,         ASN_P,             \
+AS(Q),          ASN_W,         ASN_E,                ASN_R,                ASN_T,              ASN_Y,             AS(U),                 AS(I),              AS(O),         AS(P),             \
 HRA(LGUI, A),   HRS(LALT, S),  HRD(LCTL, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(LSHFT, J),         HRK(LCTL, K),       HRL(LALT, L),  HRSQT(LGUI, SQT),   \
-AS(Z),          AS(X),         AS(C),                AS(V),                AS(B),              AS(N),             AS(M),                 AS(COMMA),          AS(DOT),       AS(SLASH),\
+AS(Z),          ASN_X,         ASN_C,                ASN_V,                AS(B),              AS(N),             AS(M),                 AS(COMMA),          AS(DOT),       AS(SLASH),\
 U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   CLN_FN(U_FUN, SEMI),  U_NP,          U_NP
+
+// #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
+// ASN_Q,          ASN_W,         ASN_E,                ASN_R,                ASN_T,              ASN_Y,             ASN_U,                 ASN_I,              ASN_O,         ASN_P,             \
+// HRA(LGUI, A),   HRS(LALT, S),  HRD(LCTL, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(LSHFT, J),         HRK(LCTL, K),       HRL(LALT, L),  HRSQT(LGUI, SQT),   \
+// AS(Z),          AS(X),         AS(C),                AS(V),                AS(B),              AS(N),             AS(M),                 AS(COMMA),          AS(DOT),       AS(SLASH),\
+// U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   CLN_FN(U_FUN, SEMI),  U_NP,          U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \

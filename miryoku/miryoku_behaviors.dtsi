@@ -229,7 +229,7 @@
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&none_num_word>;
+        bindings = <&kp>, <&swapper>;
     };
     shft_caps_word: shft_caps_word {
         compatible = "zmk,behavior-hold-tap";
@@ -237,7 +237,7 @@
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&none_caps_word>;
+        bindings = <&kp>, <&rev_swapper>;
     };
     u_sym_bspc: u_sym_bspc {
         compatible = "zmk,behavior-tap-dance";
@@ -441,7 +441,9 @@ ZMK_BEHAVIOR(u_right, tap_dance,
     bindings = <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
 )
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
-ZMK_COMBO(cmb_rshft,  &kp LSHFT, 31 43, ALL)
+ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
+ZMK_COMBO(cmb_capword,  &u_caps_word, 12 24, ALL)
+ZMK_COMBO(cmb_numword,  &num_word, 23 37, ALL)
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,

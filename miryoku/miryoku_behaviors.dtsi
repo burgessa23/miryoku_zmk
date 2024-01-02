@@ -440,4 +440,4 @@ ZMK_BEHAVIOR(u_right, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
 )
-ZMK_COMBO(cmb_lshft,  &kp LSHFT, 40 41, ALL)
+ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)

@@ -266,7 +266,7 @@
         label = "AUTO_SHIFT";
         #binding-cells = <2>;
         tapping_term_ms = <250>;
-        quick_tap_ms = <0>;
+        quick_tap_ms = <QUICK_TAP_TERM>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
@@ -441,7 +441,7 @@ ZMK_BEHAVIOR(u_right, tap_dance,
     bindings = <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
 )
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
-ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
+ZMK_COMBO(cmb_lshft,  &kp LSHFT, 31 43, ALL)
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 24, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 37, ALL)
 

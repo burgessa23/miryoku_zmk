@@ -443,7 +443,7 @@ ZMK_BEHAVIOR(u_right, tap_dance,
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 31 43, ALL)
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 24, ALL)
-ZMK_COMBO(cmb_numword,  &num_word, 23 37, ALL)
+ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 23 37, ALL)
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,

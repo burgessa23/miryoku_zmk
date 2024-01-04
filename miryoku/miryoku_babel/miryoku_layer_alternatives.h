@@ -298,10 +298,10 @@ U_UND,             U_CUT,             U_CPY,             U_PST,             U_RD
 U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BTN2,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_MS_U,            U_WH_R,            U_WH_U,            \
+U_BOOT,            U_CUT,             U_CPY,             U_PST,             U_NA,              U_NU,              U_WH_L,            U_MS_U,            U_WH_R,            U_WH_U,            \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_R,            U_WH_D,            \
-U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
+U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NA,              U_BTN1,            U_BTN3,            U_BTN2,            U_UND,             \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN3,            U_BTN2,            U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_VI \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
@@ -354,7 +354,7 @@ U_NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NUM \
-AS(N1),          AS(N7),        AS(N8),         AS(N9),          AS(N5),          AS(N6),            U_CUT,             U_CPY,             U_PST,             U_NP,             \
+AS(N1),          AS(N7),        AS(N8),         AS(N9),          AS(N5),          AS(N6),            U_PST,             U_CPY,             U_CUT,             U_NP,             \
 &kp LGUI,        AS(N4),        AS(N5),         AS(N6),          AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 AS(GRAVE),       AS(N1),        AS(N2),         AS(N3),          AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &kp COMMA,         &kp DOT,           U_BOOT,            \
 U_NP,            U_NP,          &kp MINUS,      AS(N0),       U_NA,            U_NA,              &kp BSLH,          &kp COLON,         U_NP,              U_NP

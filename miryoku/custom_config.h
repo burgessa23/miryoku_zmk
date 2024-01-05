@@ -49,15 +49,24 @@ nice_view_spi: &spi0 {
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
 
+/*
+ ╭─────────────────────────╮               ╭─────────────────────────╮
+ │ LT5 LT4 LT3 LT2 LT1 LT0 │               │ RT0 RT1 RT2 RT3 RT4 RT5 │
+ │ LM5 LM4 LM3 LM2 LM1 LM0 ╰──╮         ╭──╯ RM0 RM1 RM2 RM3 RM4 RM5 │
+ │ LB5 LB4 LB3 LB2 LB1 LB0 LH4╰────┬────╯RH4 RB0 RB1 RB2 RB3 RB4 RB5 │
+ ╰───────────────╮ LH3 LH2 LH1 LH0 │ RH0 RH1 RH2 RH3 ╭───────────────╯
+                 ╰─────────────────┴───── ───────────╯ 
+ */
+
 #define MIRYOKU_LAYOUTMAPPING_HILLSIDE46(\
      K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \
      K10, K11, K12, K13, K14,                          K15, K16, K17, K18, K19, \
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
-U_LT(U_BUTTON, ESC)     K00  K01   K02             K03  K04                                              K05  K06  K07               K08  K09  U_LT(U_BUTTON, DEL)     \
-U_SHFT_CAPS(LSHFT, LS(TAB))      K10  K11   K12             K13  K14                                              K15  K16  K17               K18  K19  U_SHFT_NUM(RSHFT)    \
-U_BF_WRAP(LG(LC(LALT))) K20  K21   K22             K23  K24  U_HML(LCTRL, LS(LA(C)))  U_RAY_WRAP(RCTRL)  K25  K26  K27               K28  K29  U_BF_WRAP(LG(LC(LALT)))  \
-                             K32   U_MT(LCMD, F11) K33  K34                                              K35  K36  U_MT(LALT, F12)  K37                              \
+U_LT(U_BUTTON, ESC)          K00   K01   K02   K03  K04                                                                           K05  K06              K07  K08  K09  U_LT(U_BUTTON, DEL)           \
+U_SHFT_CAPS(LSHFT, LS(TAB))  K10   K11   K12   K13  K14                                                                           K15  K16              K17  K18  K19  U_SHFT_NUM(RSHFT)             \
+U_MT(LG(LC(LALT)), LG(LBKT)) K20   K21   K22   K23  K24             U_HML(LCTRL, LS(LA(C)))                   U_RAY_WRAP(RCTRL)   K25  K26              K27  K28  K29  U_MT(LG(LC(LALT)), LG(RBKT))  \
+                                               K32  U_MT(LCMD, F11)                         K33   K34   K35                       K36  U_MT(LALT, F12)  K37                                          \
 
 

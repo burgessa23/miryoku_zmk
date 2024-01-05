@@ -193,6 +193,13 @@
         tapping-term-ms = <350>;
         bindings = <&kp LG(LBKT)>, <&kp LG(PIPE)>;
     };
+    u_bf: u_bf {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_bf";
+        #binding-cells = <0>;
+        tapping-term-ms = <350>;
+        bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>, <&kp LG(PIPE)>;
+    };
     u_fp: u_fp {
         compatible = "zmk,behavior-tap-dance";
         label = "u_fp";

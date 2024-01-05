@@ -237,7 +237,7 @@
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&rev_swapper>;
+        bindings = <&kp>, <&kp LS(TAB)>;
     };
     u_sym_bspc: u_sym_bspc {
         compatible = "zmk,behavior-tap-dance";
@@ -449,6 +449,7 @@ ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
+    ignored-key-positions = <LM5>;
 )
 
 ZMK_BEHAVIOR(rev_swapper, tri_state,

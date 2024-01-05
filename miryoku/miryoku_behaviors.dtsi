@@ -237,7 +237,7 @@
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "hold-preferred";
-        bindings = <&kp>, <&kp LS(TAB)>;
+        bindings = <&kp>, <&kp>;
     };
     u_sym_bspc: u_sym_bspc {
         compatible = "zmk,behavior-tap-dance";

@@ -23,7 +23,7 @@
 #define SPNAV(MOD, TAP) &spnav 0 0
 
 
-#define U_SHFT_CAPS(MOD) &shft_caps_word MOD 0
+#define U_SHFT_CAPS(MOD) &shft_caps_word MOD TAP
 #define U_SHFT_NUM(MOD) &shft_num_word MOD 0
 #define U_COL_SEMI &col_semi
 

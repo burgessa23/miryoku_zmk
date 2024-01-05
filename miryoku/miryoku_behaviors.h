@@ -12,6 +12,8 @@
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
 #define U_RAY &u_ray
+#define U_BP &u_bp
+#define U_FP &u_fp
 #define U_RAY_WRAP(MOD) &ray_wrap MOD 0
 #define U_BF_WRAP(MOD) &bf_wrap MOD 0
 #define U_ESC_CAPS_WRAP(MOD, TAP) &esc_caps_wrap MOD 0

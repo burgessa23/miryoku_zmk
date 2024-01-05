@@ -186,12 +186,19 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
-    u_bf: u_bf {
+    u_bp: u_bp {
         compatible = "zmk,behavior-tap-dance";
-        label = "u_bf";
+        label = "u_bp";
         #binding-cells = <0>;
         tapping-term-ms = <350>;
-        bindings = <&kp LG(LBKT)>, <&kp LG(RBKT)>, <&kp LG(PIPE)>;
+        bindings = <&kp LG(LBKT)>, <&kp LG(PIPE)>;
+    };
+    u_fp: u_fp {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_fp";
+        #binding-cells = <0>;
+        tapping-term-ms = <350>;
+        bindings = <&kp LG(RBKT)>, <&kp LG(PIPE)>;
     };
     bf_wrap: bf_wrap {
         compatible = "zmk,behavior-hold-tap";

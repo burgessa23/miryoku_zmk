@@ -190,7 +190,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "u_bp";
         #binding-cells = <0>;
-        tapping-term-ms = <250>;
+        tapping-term-ms = <350>;
         bindings = <&kp LG(LBKT)>, <&kp LG(PIPE)>;
     };
     u_bf: u_bf {
@@ -204,7 +204,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "u_fp";
         #binding-cells = <0>;
-        tapping-term-ms = <250>;
+        tapping-term-ms = <350>;
         bindings = <&kp LG(RBKT)>, <&kp LG(PIPE)>;
     };
     bp_wrap: bp_wrap {

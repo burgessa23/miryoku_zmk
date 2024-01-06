@@ -209,17 +209,17 @@
     };
     bp_wrap: bp_wrap {
         compatible = "zmk,behavior-hold-tap";
-        label = "BP_WRAP";
+        label = "bp_wrap";
         #binding-cells = <2>;
-        tapping_term_ms = <550>;
+        tapping_term_ms = <250>;
         flavor = "balanced";
         bindings = <&kp>, <&u_bp>;
     };
     fp_wrap: fp_wrap {
         compatible = "zmk,behavior-hold-tap";
-        label = "FP_WRAP";
+        label = "fp_wrap";
         #binding-cells = <2>;
-        tapping_term_ms = <550>;
+        tapping_term_ms = <250>;
         flavor = "balanced";
         bindings = <&kp>, <&u_fp>;
     };

@@ -15,7 +15,7 @@
 #define U_RAY &u_ray
 #define U_BP &u_back_pipe
 #define U_FP &u_fwd_pipe
-#define U_RAY_WRAP(MOD) &ray_wrap MOD 0
+#define U_RAY_WRAP(MOD) &ray_wrap 0 0
 #define U_BP_WRAP(MOD) &bp_wrap MOD 0
 #define U_FP_WRAP(MOD) &fp_wrap MOD 0
 #define U_ESC_CAPS_WRAP(MOD, TAP) &esc_caps_wrap MOD 0

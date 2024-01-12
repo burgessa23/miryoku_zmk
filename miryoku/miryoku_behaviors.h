@@ -11,6 +11,7 @@
 #define U_BAK_FWD_PIPE &u_back_fwd
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
+#define U_WORDS &nc_word
 #define U_RAY &u_ray
 #define U_BP &u_back_pipe
 #define U_FP &u_fwd_pipe

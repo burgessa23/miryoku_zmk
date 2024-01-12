@@ -236,7 +236,7 @@
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "balanced";
-        bindings = <&kp>, <&u_ray>;
+        bindings = <&kp LS(LG(SPACE))>, <&kp LA(TAB)>;
     };
     u_esc_caps: u_esc_caps {
         compatible = "zmk,behavior-tap-dance";

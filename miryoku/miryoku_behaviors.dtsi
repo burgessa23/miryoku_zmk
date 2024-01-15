@@ -474,7 +474,6 @@ ZMK_BEHAVIOR(u_right, tap_dance,
 )
 ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
 ZMK_COMBO(cmb_rshft,  &kp RSHFT, 31 43, ALL)
-ZMK_COMBO(cmb_smmouse,  &smart_mouse, 12 41, ALL)
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
@@ -489,7 +488,3 @@ ZMK_BEHAVIOR(rev_swapper, tri_state,
     bindings = <&kt LS(LCMD)>, <&kp TAB>, <&kt LS(LCMD)>;
 )
 
-ZMK_BEHAVIOR(smart_mouse, tri_state,
-    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions = <RT1 RT2 RT3 RT4>;
-)

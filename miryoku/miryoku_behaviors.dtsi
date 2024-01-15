@@ -488,3 +488,7 @@ ZMK_BEHAVIOR(rev_swapper, tri_state,
     bindings = <&kt LS(LCMD)>, <&kp TAB>, <&kt LS(LCMD)>;
 )
 
+ZMK_BEHAVIOR(smart_mouse, tri_state,
+    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+    ignored-key-positions = <RT1 RT2 RT3 RT4>;
+)

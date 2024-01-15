@@ -489,6 +489,7 @@ ZMK_BEHAVIOR(rev_swapper, tri_state,
 )
 
 ZMK_BEHAVIOR(smart_mouse, tri_state,
-    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions = <RT1 RT2 RT3 RT4>;
+  bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+  ignored-key-positions = ;
+ignored-layers = ;
 )

@@ -343,6 +343,7 @@
          #binding-cells = <0>;
          bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
          ignored-key-positions = <7 8 9 10 19 20 21 22 33 34 35 42 43 45>;
+         ignored-layers = <5>;
     };
   };
   macros {
@@ -484,8 +485,12 @@ ZMK_COMBO(cmb_rshft,  &kp RSHFT, 31 43, ALL)
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
+ZMK_COMBO(cmb_mouse,  &dicko, 12 41, ALL)
 
 // Alt+Tab swapper, requires PR #1366
+
+
+
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
     ignored-key-positions = <LM5>;

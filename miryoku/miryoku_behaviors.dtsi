@@ -337,14 +337,6 @@
         bindings = <&kp COLON>, <&kp SEMI>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    dicko: dicko {
-         compatible = "zmk,behavior-tri-state";
-         label = "DICKO";
-         #binding-cells = <0>;
-         bindings = <&tog U_MOUSE>, <&none>, <&tog U_MOUSE>;
-         ignored-key-positions = <7 8 9 10 19 20 21 22 33 34 35 42 43 45>;
-         ignored-layers = <5>;
-    };
   };
   macros {
     mo_nav: mo_nav {
@@ -486,11 +478,15 @@ ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
 
-ZMK_COMBO(cmb_mouse,  &tog U_MOUSE, 12 41, ALL)
+ZMK_COMBO(cmb_mouse,  &smart_mouse, 12 41, ALL)
 
 // Alt+Tab swapper, requires PR #1366
 
-
+ZMK_BEHAVIOR(smart_mouse, tri_state,
+    bindings = <&tog U_MOUSE>, <&none>, <&tog U_MOUSE>;
+    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH3>;
+    ignored-layers = <U_MOUSE>;
+)
 
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;

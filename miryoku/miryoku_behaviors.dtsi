@@ -478,7 +478,7 @@ ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
 
-ZMK_COMBO(cmb_mouse,  &smart_mouse, 12 41, U_BASE)
+ZMK_COMBO(cmb_mouse,  &smart_mouse, LM5 LH0, U_BASE)
 
 // Alt+Tab swapper, requires PR #1366
 

@@ -484,8 +484,8 @@ ZMK_COMBO(cmb_mouse,  &smart_mouse, LM5 LH0, U_BASE)
 
 ZMK_BEHAVIOR(smart_mouse, tri_state,
     bindings = <&tog U_MOUSE>, <&none>, <&tog U_MOUSE>;
-    ignored-key-positions = <RT1 RT2 RT3 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH3>;
-    ignored-layers = <U_MOUSE>;
+    // ignored-key-positions = <RT1 RT2 RT3 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH3>;
+    // ignored-layers = <U_MOUSE>;
 )
 
 ZMK_BEHAVIOR(swapper, tri_state,

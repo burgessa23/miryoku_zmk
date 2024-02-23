@@ -269,7 +269,7 @@ U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT \
 U_BOOT,            U_CUT,             U_CPY,             U_PST,             U_UND,             &kp PG_DN,         &kp HOME,          &kp UP,            &kp END,           &kp PG_UP,         \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_WORDS,           &kp LEFT,          &kp DOWN,          &kp RIGHT,         U_NA,              \
-U_NA,              &u_to_U_BASE,      &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_UND,             U_LEFT,            &kp PG_UP,         U_RIGHT,           U_RDO,             \
+U_NA,              &u_to_U_BASE,      &u_to_U_NUM,       &u_to_U_MOUSE,     U_NA,              U_UND,             U_LEFT,            &kp PG_UP,         U_RIGHT,           U_RDO,             \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,          &kp RET,           U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV_VI \
@@ -306,7 +306,7 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_MS_U,            U_WH_R,            U_WH_U,            \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_R,            U_WH_D,            \
-U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             \
+U_NA,              &u_to_U_BASE,      &u_to_U_SYM,       &u_to_U_NUM,       U_NA,              U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN3,            U_BTN2,            U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_VI \
@@ -362,7 +362,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_NUM \
 AS(BSLH),          AS(N7),        AS(N8),         AS(N9),       AS(N5),          U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             \
 &kp LGUI,          AS(N4),        AS(N5),         AS(N6),       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-AS(GRAVE),         AS(N1),        AS(N2),         AS(N3),       AS(LBKT),        AS(RBKT),          &u_to_U_NUM,       &u_to_U_NAV,       &u_to_U_BASE,      U_BOOT,            \
+AS(GRAVE),         AS(N1),        AS(N2),         AS(N3),       AS(LBKT),        AS(RBKT),          &u_to_U_SYM,       &u_to_U_NAV,       &u_to_U_BASE,      U_BOOT,            \
 U_NP,              U_NP,          AS(N0),         AS(N0),       U_NA,            U_NA,              &kp BSLH,          &kp COLON,         U_NP,              U_NP
 
 // #define MIRYOKU_ALTERNATIVES_NUM \
@@ -380,9 +380,9 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 #define MIRYOKU_ALTERNATIVES_SYM \
-&kp PIPE,  &kp AMPS,          &kp ASTRK,       U_PAR,          &kp PRCNT,     &kp CARET,    U_CUT,             U_CPY,             U_PST,             U_RDO,          \
+&kp PIPE,  &kp AMPS,          &kp ASTRK,       U_PAR,          &kp PRCNT,     &kp CARET,    U_CUT,             U_CPY,             U_PST,            U_RDO,          \
 &kp LGUI,  &kp DLLR,          &kp PRCNT,       &kp CARET,      &kp PLUS,      &kp UNDER,    &kp LSHFT,         &kp LCTRL,         &kp LALT,         &kp LGUI,        \
-U_NA,      &kp EXCL,          &kp AT,          &kp HASH,       &kp LBRC,      &kp RBRC,     &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,            \
+U_NA,      &kp EXCL,          &kp AT,          &kp HASH,       &kp LBRC,      &kp RBRC,     &u_to_U_NUM,       &u_to_U_MOUSE,     &u_to_U_BASE,    U_NA,            \
 U_NP,      U_NP,              &kp RPAR,        &kp RPAR,       U_NA,          U_NA,         &kp BSLH,          U_NA,              U_NP,             U_NP
 
 

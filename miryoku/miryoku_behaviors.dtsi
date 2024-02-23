@@ -439,6 +439,7 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 )
 
 &num_word {
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
     layers = <U_NUM>;  // replace NUM by the location of numbers layer
 };
 
@@ -478,7 +479,7 @@ ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
 
-ZMK_COMBO(cmb_mouse,  &smart_mouse, LM5 LH0, ALL)
+ZMK_COMBO(cmb_mouse,  &smart_mouse, LM1 LM0, ALL)
 
 // Alt+Tab swapper, requires PR #1366
 

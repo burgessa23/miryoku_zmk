@@ -479,7 +479,19 @@ ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
 
+ZMK_COMBO(cmb_cmd_sht,  &kp LS(LGUI), 13 16, U_BASE)
+ZMK_COMBO(cmb_sht_cmd,  &kp LS(LGUI), 19 22, U_BASE)
+
+ZMK_COMBO(cmb_alt_sht,  &kp LS(LALT), 14 16, U_BASE)
+ZMK_COMBO(cmb_sht_alt,  &kp LS(LALT), 19 21, U_BASE)
+
+ZMK_COMBO(cmb_ctrl_sht,  &kp LS(LCTRL), 15 16, U_BASE)
+ZMK_COMBO(cmb_sht_ctrl,  &kp LS(LCTRL), 19 20, U_BASE)
+
+
+
 ZMK_COMBO(cmb_mouse,  &smart_mouse, LM1 LM0, U_NAV U_NUM U_BASE)
+
 
 // Alt+Tab swapper, requires PR #1366
 

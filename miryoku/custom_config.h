@@ -12,7 +12,7 @@
 
 #define XXX &none
 #undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <100>;
+#define COMBO_HOOK global-quick-tap-ms = <150>;
 #define QUICK_TAP_MS 175
 
 #define COMBO_TERM_FAST 20

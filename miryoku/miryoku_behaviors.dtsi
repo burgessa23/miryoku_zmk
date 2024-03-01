@@ -512,7 +512,7 @@ ZMK_BEHAVIOR(u_right, tap_dance,
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
 ZMK_COMBO(cmb_alt_gui_hint,  &kp LA(LG(H)), 40 43, ALL)
-ZMK_COMBO(cmb_alt_gui_grid,  &kp LA(LG(G)), 41 42, ALL)
+ZMK_COMBO(cmb_alt_gui_grid,  &kp LA(LG(G)), 30 31, ALL)
 
 ZMK_COMBO(cmb_cmd_sht,  &kp LS(LGUI), 13 16, U_BASE)
 ZMK_COMBO(cmb_sht_cmd,  &kp LS(LGUI), 19 22, U_BASE)

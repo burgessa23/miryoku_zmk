@@ -45,7 +45,7 @@ ZMK_COMBO(cmb_cap_n,  &kp LS(N), 16 32, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_m,  &kp LS(M), 16 33, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_comma,  &kp LS(COMMA), 16 34, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_dot,  &kp LS(DOT), 16 35, U_BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(cmb_cap_slash,  &kp LS(SLASH), 16 36, U_BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(cmb_cap_slash,  &kp LS(SLASH), 16 35, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_colon,  &kp LS(SEMI), 16 45, U_BASE, COMBO_TERM_SLOW)
 
 ZMK_COMBO(cmb_cap_q,  &kp LS(Q), 19 1, U_BASE, COMBO_TERM_SLOW)
@@ -511,7 +511,8 @@ ZMK_BEHAVIOR(u_right, tap_dance,
 // ZMK_COMBO(cmb_rshft,  &kp RSHFT, 31 43, ALL)
 ZMK_COMBO(cmb_capword,  &u_caps_word, 12 40, ALL)
 ZMK_COMBO(cmb_numword,  &num_word, 23 43, ALL)
-ZMK_COMBO(cmb_alt_gui,  &kp LA(LGUI), 40 43, ALL)
+ZMK_COMBO(cmb_alt_gui_hint,  &kp LA(LG(H)), 40 43, ALL)
+ZMK_COMBO(cmb_alt_gui_grid,  &kp LA(LG(G)), 41 42, ALL)
 
 ZMK_COMBO(cmb_cmd_sht,  &kp LS(LGUI), 13 16, U_BASE)
 ZMK_COMBO(cmb_sht_cmd,  &kp LS(LGUI), 19 22, U_BASE)

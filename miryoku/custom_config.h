@@ -15,8 +15,8 @@
 #define COMBO_HOOK global-quick-tap-ms = <150>;
 #define QUICK_TAP_MS 175
 
-#define COMBO_TERM_FAST 20
-#define COMBO_TERM_SLOW 45
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 65
 
 
 &pinctrl {

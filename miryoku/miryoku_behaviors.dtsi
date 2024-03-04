@@ -499,12 +499,12 @@ ZMK_BEHAVIOR(none_num_word, tap_dance,
 )
 
 ZMK_BEHAVIOR(u_left, tap_dance,
-    tapping-term-ms = <150>;
+    tapping-term-ms = <125>;
     bindings = <&kp LA(LEFT)>,<&kp LG(LEFT)>;
 )
 
 ZMK_BEHAVIOR(u_right, tap_dance,
-    tapping-term-ms = <150>;
+    tapping-term-ms = <125>;
     bindings = <&kp LA(RIGHT)>,<&kp LG(RIGHT)>;
 )
 // ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)

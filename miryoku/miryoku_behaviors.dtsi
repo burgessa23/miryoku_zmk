@@ -37,7 +37,7 @@ ZMK_COMBO(cmb_cap_i,  &kp LS(I), 16 8, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_o,  &kp LS(O), 16 9, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_p,  &kp LS(P), 16 10, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_h,  &kp LS(H), 16 18, U_BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(cmb_cap_j,  &kp LS(J), 16 19, U_BASE, COMBO_TERM_SLOW)
+// ZMK_COMBO(cmb_cap_j,  &kp LS(J), 16 19, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_k,  &kp LS(K), 16 20, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_l,  &kp LS(L), 16 21, U_BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cmb_cap_quot,  &kp LS(SQT), 16 22, U_BASE, COMBO_TERM_SLOW)
@@ -499,13 +499,13 @@ ZMK_BEHAVIOR(none_num_word, tap_dance,
 )
 
 ZMK_BEHAVIOR(u_left, tap_dance,
-    tapping-term-ms = <350>;
-    bindings = <&kp LA(LEFT)>,<&kp LA(LEFT)>, <&kp LG(LEFT)>;
+    tapping-term-ms = <150>;
+    bindings = <&kp LA(LEFT)>,<&kp LG(LEFT)>;
 )
 
 ZMK_BEHAVIOR(u_right, tap_dance,
-    tapping-term-ms = <250>;
-    bindings = <&kp LA(RIGHT)>,<&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
+    tapping-term-ms = <150>;
+    bindings = <&kp LA(RIGHT)>,<&kp LG(RIGHT)>;
 )
 // ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, ALL)
 // ZMK_COMBO(cmb_rshft,  &kp RSHFT, 31 43, ALL)

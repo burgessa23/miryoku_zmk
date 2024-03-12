@@ -472,8 +472,12 @@ ZMK_BEHAVIOR(ht2, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+&caps_word {
+    continue-list = <BSPC DEL DOT COMMA FSLH EQUAL UNDER MINUS SPACE>;
+};
+
 &num_word {
-    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL UNDER LPAR RPAR LBRC RBRC LBKT RBKT>;
     layers = <U_NUM>;  // replace NUM by the location of numbers layer
 };
 

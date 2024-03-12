@@ -50,6 +50,12 @@ nice_view_spi: &spi0 {
 };
 
 /*
+  ╭────────────────────────╮               ╭────────────────────────╮
+  │  0   1   2   3   4   5 │               │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 ╰──╮         ╭──╯ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29  30╰────┬────╯31  32  33  34  35  36  37 │
+  ╰───────────────╮ 38  39  40  41 │ 42  43  44  45 ╭───────────────╯
+                  ╰────────────────┴────────────────╯
  ╭─────────────────────────╮               ╭─────────────────────────╮
  │ LT5 LT4 LT3 LT2 LT1 LT0 │               │ RT0 RT1 RT2 RT3 RT4 RT5 │
  │ LM5 LM4 LM3 LM2 LM1 LM0 ╰──╮         ╭──╯ RM0 RM1 RM2 RM3 RM4 RM5 │
@@ -64,9 +70,9 @@ nice_view_spi: &spi0 {
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
-U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                               K05  K06              K07  K08  K09  U_LT(U_BUTTON, DEL)      \
-U_SHFT_CAPS(LSHFT, LS(TAB))  K10   K11   K12   K13  K14                                                                               K15  K16              K17  K18  K19  U_SHFT_NUM(RSHFT)        \
-U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24             U_MT(LS(LA(P)), LS(LA(C)))   U_RAY_WRAP(LA(TAB), LC(SPACE))   K25  K26              K27  K28  K29  U_FP_WRAP(LG(LC(LALT)))  \
-                                               K32  U_MT(LCMD, F11)                        K33   K34   K35                            K36  U_MT(LALT, F12)  K37                                     \
+U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                                    K05              K06  K07  K08  K09  U_LT(U_BUTTON, DEL)      \
+U_SHFT_CAPS(LSHFT, LS(TAB))  K10   K11   K12   K13  K14                                                                                    K15              K16  K17  K18  K19  U_SHFT_NUM(RSHFT)        \
+U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24             U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_WRAP(LA(TAB), LC(SPACE)) K25              K26  K27  K28  K29  U_FP_WRAP(LG(LC(LALT)))  \
+                                               K32  U_MT(LCMD, F11) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          \
 
 

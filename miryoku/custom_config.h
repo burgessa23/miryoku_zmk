@@ -16,7 +16,7 @@
 #define QUICK_TAP_MS 175
 
 #define COMBO_TERM_FAST 35
-#define COMBO_TERM_SLOW 65
+#define COMBO_TERM_SLOW 85
 
 
 &pinctrl {

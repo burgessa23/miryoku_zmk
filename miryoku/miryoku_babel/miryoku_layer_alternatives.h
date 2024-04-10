@@ -362,7 +362,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_NUM \
 AS(BSLH),          AS(N7),        AS(N8),         AS(N9),       AS(N5),          U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             \
 &kp LGUI,          AS(N4),        AS(N5),         AS(N6),       AS(EQUAL),       AS(MINUS),         &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-AS(GRAVE),         AS(N1),        AS(N2),         AS(N3),       AS(LBKT),        AS(RBKT),          &kp COMMA,         &kp DOT,           &u_to_U_BASE,      U_BOOT,            \
+AS(GRAVE),         AS(N1),        AS(N2),         AS(N3),       AS(LBKT),        AS(RBKT),          &u_to_U_BASE,      &kp COMMA,         &kp DOT,           U_BOOT,            \
 U_NP,              U_NP,          AS(N0),         AS(N0),       U_NA,            U_NA,              &kp BSLH,          &kp COLON,         U_NP,              U_NP
 
 // #define MIRYOKU_ALTERNATIVES_NUM \

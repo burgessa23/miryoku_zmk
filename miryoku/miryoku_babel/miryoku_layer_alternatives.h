@@ -115,7 +115,7 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp M,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
-AS(Q),          ASN_W,         ASN_E,                ASN_R,                MT(LC(T), T),          ASN_Y,             AS(U),                 AS(I),                AS(O),         MT(LC(P), P),         \
+AS(Q),          ASN_W,         ASN_E,                ASN_R,                U_MT(LC(T), T),     ASN_Y,             AS(U),                 AS(I),                AS(O),         U_MT(LC(P), P),    \
 HRA(LGUI, A),   HRS(LALT, S),  HRD(LCTL, D),         AS(F),                AS(G),              AS(H),             AS(J),                 HRK(LCTL, K),         HRL(LALT, L),  HRSQT(LGUI, SQT),  \
 AS(Z),          ASN_X,         ASN_C,                ASN_V,                AS(B),              AS(N),             AS(M),                 AS(COMMA),            AS(DOT),       AS(SLASH),         \
 U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   CLN_FN(U_FUN, SEMI),  U_NP,          U_NP

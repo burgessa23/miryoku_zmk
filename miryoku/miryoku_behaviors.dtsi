@@ -203,6 +203,7 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
       require-prior-idle-ms = <150>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <0>;
     };
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";

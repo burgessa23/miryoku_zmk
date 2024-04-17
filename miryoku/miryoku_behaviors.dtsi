@@ -190,9 +190,19 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
         retro-tap-param1 = <LS(SEMI)>;
-    };
         hold-trigger-key-positions = <KEYS_R THUMBS>;
         hold-trigger-on-release;             // delay positional check until key-release
+    };
+    u_mt_z: u_mt_z {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_mt";
+      #binding-cells = <2>;
+      tapping_term_ms = <225>;
+      quick-tap-ms = <175>;
+      global-quick-tap-ms = <150>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";

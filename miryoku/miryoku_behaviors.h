@@ -5,6 +5,7 @@
 
 
 
+#define U_MT_Z(MOD, TAP) &u_mt_z MOD TAP
 #define U_MT(MOD, TAP) &u_mt MOD TAP
 #define U_HML(MOD, TAP) &u_hml MOD TAP
 #define U_HMR(MOD, TAP) &u_hmr MOD TAP

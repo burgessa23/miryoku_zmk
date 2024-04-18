@@ -200,6 +200,8 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
       tapping_term_ms = <U_TAPPING_TERM>;
       quick-tap-ms = <175>;
       global-quick-tap-ms = <150>;
+      quick-release;
+      release-after-ms = <2000>;
       flavor = "hold-preferred";
       bindings = <&kp>, <&sk>;
     };
@@ -525,42 +527,42 @@ ZMK_BEHAVIOR(none_num_word, tap_dance,
 )
 
 ZMK_BEHAVIOR(u_h_h, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp H>,<&kp LC(H)>;
 )
 
 ZMK_BEHAVIOR(u_o_o, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp O>,<&kp LC(O)>;
 )
 
 ZMK_BEHAVIOR(u_t_t, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp T>,<&kp LC(T)>;
 )
 
 ZMK_BEHAVIOR(u_p_p, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp P>,<&kp LC(P)>;
 )
 
 ZMK_BEHAVIOR(u_n_n, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp N>,<&kp LC(N)>;
 )
 
 ZMK_BEHAVIOR(u_s_s, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp S>,<&kp LC(S)>;
 )
 
 ZMK_BEHAVIOR(u_left, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp LA(LEFT)>,<&kp LG(LEFT)>;
 )
 
 ZMK_BEHAVIOR(u_right, tap_dance,
-    tapping-term-ms = <125>;
+    tapping-term-ms = <150>;
     bindings = <&kp LA(RIGHT)>,<&kp LG(RIGHT)>;
 )
 // ZMK_COMBO(cmb_lshft,  &kp LSHFT, 30 40, U_BASE)

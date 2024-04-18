@@ -201,7 +201,7 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
       quick-tap-ms = <175>;
       global-quick-tap-ms = <150>;
       flavor = "hold-preferred";
-      bindings = <&kp>, <&sp LCTRL>;
+      bindings = <&kp>, <&sk LCTRL>;
     };
     // u_mt_z: u_mt_z {
     //   compatible = "zmk,behavior-hold-tap";

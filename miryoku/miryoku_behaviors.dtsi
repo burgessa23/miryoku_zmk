@@ -397,7 +397,7 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
         compatible = "zmk,behavior-tap-dance";
         label = "u_h_h";
         #binding-cells = <0>;
-        tapping-term-ms = <150>;
+        tapping-term-ms = <250>;
         bindings = <&kp H>, <&kp LC(H)>;
     };
   };

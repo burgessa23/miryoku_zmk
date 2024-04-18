@@ -67,10 +67,6 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
 
 / {
   behaviors {
-    &sk {
-        release-after-ms = <2000>;
-        quick-release;
-    };
     hrasA: hrasA {
         compatible = "zmk,behavior-hold-tap";
         label = "hrasA";
@@ -505,6 +501,11 @@ ZMK_BEHAVIOR(ht2, hold_tap,
 &num_word {
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL UNDER LPAR RPAR LBRC RBRC LBKT RBKT>;
     layers = <U_NUM>;  // replace NUM by the location of numbers layer
+};
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
 };
 
 ZMK_BEHAVIOR(asn, hold_tap,

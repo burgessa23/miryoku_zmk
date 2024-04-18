@@ -75,3 +75,11 @@
 #define U_PAR &parens
 #define U_LEFT &u_left
 #define U_RIGHT &u_right
+
+#define U_H_H &u_h_h
+#define U_O_O &u_o_o
+#define U_T_T &u_t_t
+#define U_P_P &u_p_p
+#define U_N_N &u_n_n
+#define U_S_S &u_s_s
+

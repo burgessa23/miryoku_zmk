@@ -93,7 +93,7 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
         hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <N4>;
+        retro-tap-param1 = <U_S_S>;
     };
     hrasD: hrasD {
         compatible = "zmk,behavior-hold-tap";
@@ -522,6 +522,36 @@ ZMK_BEHAVIOR(none_caps_word, tap_dance,
 ZMK_BEHAVIOR(none_num_word, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&num_word>, <&swapper>;
+)
+
+ZMK_BEHAVIOR(u_h_h, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp H>,<&kp LC(H)>;
+)
+
+ZMK_BEHAVIOR(u_o_o, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp O>,<&kp LC(O)>;
+)
+
+ZMK_BEHAVIOR(u_t_t, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp T>,<&kp LC(T)>;
+)
+
+ZMK_BEHAVIOR(u_p_p, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp P>,<&kp LC(P)>;
+)
+
+ZMK_BEHAVIOR(u_n_n, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp N>,<&kp LC(N)>;
+)
+
+ZMK_BEHAVIOR(u_s_s, tap_dance,
+    tapping-term-ms = <125>;
+    bindings = <&kp S>,<&kp LC(S)>;
 )
 
 ZMK_BEHAVIOR(u_left, tap_dance,

@@ -393,6 +393,13 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
         bindings = <&kp COLON>, <&kp SEMI>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    u_h_h: u_h_h {
+        compatible = "zmk,behavior-tap-dance";
+        label = "u_h_h";
+        #binding-cells = <0>;
+        tapping-term-ms = <150>;
+        bindings = <&kp H>, <&kp LC(H)>;
+    };
   };
   macros {
     mo_nav: mo_nav {
@@ -527,11 +534,6 @@ ZMK_BEHAVIOR(none_caps_word, tap_dance,
 ZMK_BEHAVIOR(none_num_word, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&num_word>, <&swapper>;
-)
-
-ZMK_BEHAVIOR(u_h_h, tap_dance,
-    tapping-term-ms = <150>;
-    bindings = <&kp H>,<&kp LC(H)>;
 )
 
 ZMK_BEHAVIOR(u_o_o, tap_dance,

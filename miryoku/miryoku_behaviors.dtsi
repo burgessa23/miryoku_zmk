@@ -93,7 +93,7 @@ ZMK_COMBO(cmb_cap_grave,  &kp LS(GRAVE), 19 38, U_BASE, COMBO_TERM_SLOW)
         hold-trigger-on-release;             // delay positional check until key-release
         retro-tap;
         retro-tap-behavior = "KEY_PRESS";
-        retro-tap-param1 = <U_S_S>;
+        retro-tap-param1 = <N4>;
     };
     hrasD: hrasD {
         compatible = "zmk,behavior-hold-tap";

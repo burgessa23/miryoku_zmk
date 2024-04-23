@@ -392,7 +392,7 @@ U_NP,      U_NP,              &kp RPAR,        &kp RPAR,       U_NA,          U_
 // U_NA,         &kp RCMD,          &u_to_U_NUM,       &u_to_U_BASE,      &kp LBRC,      &kp RBRC,     &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,              \
 // U_NP,         U_NP,              U_NA,              &kp UNDER,         U_NA,          U_NA,         &kp BSLH,          U_NA,              U_NP,             U_NP
 #define MIRYOKU_ALTERNATIVES_FUN \
-&kp F13,           &kp F7,            &kp F8,            &kp F9,            &kp F23,        &kp F24,          U_CUT,         U_CPY,          U_PST,        U_RDO,            \
+&kp LC(F12),           &kp F7,            &kp F8,            &kp F9,            &kp F23,        &kp F24,          U_CUT,         U_CPY,          U_PST,        U_RDO,            \
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,       &kp LNLCK,        &kp LSHFT,     &kp LCTRL,      &kp LALT,     &kp LGUI,         \
 &kp F10,           &kp F1,            &kp F2,            &kp F3,            U_RDO,          U_UND,            U_CUT,         U_CPY,          U_PST,        U_RDO,            \
 U_NP,              U_NP,              &kp LS(LG(P)),     &kp F10,           &kp TAB,        U_NA,             U_NA,          U_NA,           U_NP,         U_NP

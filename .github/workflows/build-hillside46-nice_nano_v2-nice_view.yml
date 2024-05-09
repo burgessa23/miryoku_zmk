@@ -2,14 +2,19 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'Build Hillside46 nice_nano_v2 nice_view'
-on:
-  push:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
+
 jobs:
   build:
-    uses: ./.github/workflows/main.yml
-    secrets: inherit
-    with:
-      board: '["nice_nano_v2"]'
-      shield: '["hillside46_left nice_view_adapter nice_view","hillside46_right nice_view_adapter nice_view"]'
-      branches: '["burgessa23/zmk/animated_widgets"]'
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+# on:
+#   push:
+#   workflow_dispatch:
+# jobs:
+#   build:
+#     uses: ./.github/workflows/main.yml
+#     secrets: inherit
+#     with:
+#       board: '["nice_nano_v2"]'
+#       shield: '["hillside46_left nice_view_adapter nice_view","hillside46_right nice_view_adapter nice_view"]'
+#       branches: '["burgessa23/zmk/animated_widgets"]'

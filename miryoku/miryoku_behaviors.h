@@ -12,10 +12,16 @@
 #define U_BAK_FWD_PIPE &u_back_fwd
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
+
+#define U_SMART_NUM &smart_num U_NUM 0
+#define U_SMART_TAB_MOUSE &smart_tab_mouse U_MOUSE 0
+
+
 #define U_WORDS &nc_word
 #define U_RAY &u_ray
 #define U_BP &u_back_pipe
 #define U_FP &u_fwd_pipe
+#define U_RAY_DANCE(MOD, TAP) &ray_dance_wrap MOD 0
 #define U_RAY_WRAP(MOD, TAP) &ray_wrap MOD TAP
 #define U_BP_WRAP(MOD) &bp_wrap MOD 0
 #define U_FP_WRAP(MOD) &fp_wrap MOD 0
@@ -26,7 +32,6 @@
 #define U_HT2(MOD, TAP) &ht2 MOD TAP
 // #define U_NST(MOD, TAP) &nst 0 TAP
 // #define SPNAV(MOD, TAP) &spnav 0 0
-
 
 #define U_SHFT_CAPS(MOD, TAP) &shft_caps_word MOD TAP
 #define U_SHFT_NUM(MOD) &shft_num_word MOD 0
@@ -69,6 +74,8 @@
 #define ASN_X &asn N1 X
 #define ASN_C &asn N2 C
 #define ASN_V &asn N3 V
+#define ASN_T &asn N5 T
+#define ASN_F &asn N6 F
 
 
 #define U_SWAPR &swapper

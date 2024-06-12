@@ -4,19 +4,20 @@
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_TAP_QWERTY
 #define MIRYOKU_MAPPING_EXTENDED_THUMBS
-#define MIRYOKU_EXTRA_COLEMAKDH
+// #define MIRYOKU_EXTRA_COLEMAKDH
 #define MIRYOKU_NAV_INVERTEDT
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_MAC
 
 #define XXX &none
 #undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <150>;
+#define COMBO_HOOK require-prior-idle-ms = <150>;
 #define QUICK_TAP_MS 175
 
 #define COMBO_TERM_FAST 35
 #define COMBO_TERM_SLOW 85
-
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -69,9 +70,9 @@ nice_view_spi: &spi0 {
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
-U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                                    K05              K06  K07  K08  K09  U_LT(U_BUTTON, DEL)      \
-U_SHFT_CAPS(LSHFT, LS(TAB))  K10   K11   K12   K13  K14                                                                                    K15              K16  K17  K18  K19  U_SHFT_NUM(RSHFT)        \
-U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24                 U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_WRAP(LA(TAB), LC(SPACE)) K25              K26  K27  K28  K29  U_FP_WRAP(LG(LC(LALT)))  \
-                                               K32  U_MT_Z(LCMD, LCTRL) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          \
+U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                                        K05              K06  K07  K08  K09  U_LT(U_BUTTON, DEL)      \
+&smart_shft                  K10   K11   K12   K13  K14                                                                                        K15              K16  K17  K18  K19  &smart_shft              \
+U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24                 U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_DANCE(LA(TAB), ESC) K25              K26  K27  K28  K29  U_FP_WRAP(LG(LC(LALT)))  \
+                                               K32  U_MT(LCMD, LC(B)) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          \
 
 

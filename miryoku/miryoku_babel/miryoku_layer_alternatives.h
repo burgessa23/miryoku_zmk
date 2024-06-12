@@ -115,10 +115,10 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp M,             &kp C,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
-AS(Q),          ASN_W,         ASN_E,                ASN_R,                AS(T),              AS(Y),             AS(U),                 AS(I),                AS(O),         AS(P),             \
-HRA(LGUI, A),   HRS(LALT, S),  HRD(LCTL, D),         HRF(LSHFT, F),        AS(G),              AS(H),             HRJ(RSHFT, J),                 HRK(LCTL, K),         HRL(LALT, L),  HRSQT(LGUI, SQT),  \
-AS(Z),          ASN_X,         ASN_C,                ASN_V,                AS(B),              AS(N),             AS(M),                 AS(COMMA),            AS(DOT),       AS(SLASH),         \
-U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_LT(U_MOUSE, TAB), U_LT(U_SYM, BSPC), U_LTNUM(U_NUM, RET),   CLN_FN(U_FUN, SEMI),  U_NP,          U_NP
+AS(Q),          ASN_W,         ASN_E,                ASN_R,                AS(T),              AS(Y),             AS(U),         AS(I),                AS(O),         AS(P),             \
+&hml LGUI A,    &hml LALT S,   &hml LCTRL D,         ASN_F,                AS(G),              AS(H),             AS(J),         &hmr LCTRL K,         &hmr LALT L,   &hmr LGUI SQT,     \
+AS(Z),          ASN_X,         ASN_C,                ASN_V,                AS(B),              AS(N),             AS(M),         AS(COMMA),            AS(DOT),       AS(SLASH),         \
+U_NP,           U_NP,          U_LT(U_MEDIA, GRAVE), U_LT(U_NAV, SPACE),   U_SMART_TAB_MOUSE,  U_LT(U_SYM, BSPC), U_SMART_NUM,   U_LT(U_FUN, SEMI),    U_NP,          U_NP
 
 // #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
 // ASN_Q,          ASN_W,         ASN_E,                ASN_R,                ASN_T,              ASN_Y,             ASN_U,                 ASN_I,              ASN_O,         ASN_P,             \
@@ -382,7 +382,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_SYM \
 &kp PIPE,  &kp AMPS,          &kp ASTRK,       U_PAR,          &kp PRCNT,     &kp CARET,    U_CUT,             U_CPY,             U_PST,            U_RDO,          \
 &kp LGUI,  &kp DLLR,          &kp PRCNT,       &kp CARET,      &kp PLUS,      &kp UNDER,    &kp LSHFT,         &kp LCTRL,         &kp LALT,         &kp LGUI,        \
-U_NA,      &kp EXCL,          &kp AT,          &kp HASH,       &kp LBRC,      &kp RBRC,     &u_to_U_NUM,       &u_to_U_MOUSE,     &u_to_U_BASE,    U_NA,            \
+U_NA,      &qexcl,            &kp AT,          &kp HASH,       &kp LBRC,      &kp RBRC,     &u_to_U_NUM,       &u_to_U_MOUSE,     &u_to_U_BASE,    U_NA,            \
 U_NP,      U_NP,              &kp RPAR,        &kp RPAR,       U_NA,          U_NA,         &kp BSLH,          U_NA,              U_NP,             U_NP
 
 
@@ -392,7 +392,7 @@ U_NP,      U_NP,              &kp RPAR,        &kp RPAR,       U_NA,          U_
 // U_NA,         &kp RCMD,          &u_to_U_NUM,       &u_to_U_BASE,      &kp LBRC,      &kp RBRC,     &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,         U_NA,              \
 // U_NP,         U_NP,              U_NA,              &kp UNDER,         U_NA,          U_NA,         &kp BSLH,          U_NA,              U_NP,             U_NP
 #define MIRYOKU_ALTERNATIVES_FUN \
-&kp LC(F12),           &kp F7,            &kp F8,            &kp F9,            &kp F23,        &kp F24,          U_CUT,         U_CPY,          U_PST,        U_RDO,            \
+&kp LC(F12),       &kp F7,            &kp F8,            &kp F9,            &kp F23,        &kp F24,          U_CUT,         U_CPY,          U_PST,        U_RDO,            \
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,       &kp LNLCK,        &kp LSHFT,     &kp LCTRL,      &kp LALT,     &kp LGUI,         \
 &kp F10,           &kp F1,            &kp F2,            &kp F3,            U_RDO,          U_UND,            U_CUT,         U_CPY,          U_PST,        U_RDO,            \
 U_NP,              U_NP,              &kp LS(LG(P)),     &kp F10,           &kp TAB,        U_NA,             U_NA,          U_NA,           U_NP,         U_NP
@@ -410,12 +410,6 @@ U_UND,             U_CUT,             U_CPY,             U_PST,             U_RD
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_UND,             &kp LC(LEFT),      &kp LC(DOWN),      &kp LC(UP),      &kp LC(RIGHT),     \
 U_NP,              U_NP,              U_BTN3,            U_BTN2,            U_BTN1,            U_BTN1,            U_BTN2,            U_BTN3,            U_NP,            U_NP
 
-
-#define MIRYOKU_ALTERNATIVES_CLEAR \
-&trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             &trans,             \
-&trans,             &trans,             &trans,             U_HT2(LSHFT, SPACE),&trans,             &trans,             &trans,             &trans,             &trans,             &trans
 
 
 

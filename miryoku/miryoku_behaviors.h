@@ -14,7 +14,9 @@
 #define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
 
 #define U_SMART_NUM &smart_num U_NUM 0
+#define U_SMART_SPACE_NAV &smart_space_nav U_NAV 0
 #define U_SMART_TAB_MOUSE &smart_tab_mouse U_MOUSE 0
+#define U_SMART_BKSPACE_SYM &smart_bkspace_sym U_SYM 0
 
 
 #define U_WORDS &nc_word

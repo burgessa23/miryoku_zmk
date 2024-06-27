@@ -88,15 +88,51 @@ ZMK_MOD_MORPH(smart_shft,
     continue-list = <BSPC DEL DOT COMMA FSLH EQUAL UNDER MINUS SPACE>;
 };
 
+
+ZMK_TRI_STATE(smart_sym,
+    bindings = <&tog U_SYM>, <&none>, <&tog U_SYM>;
+    ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH2>;
+    ignored-layers = <U_SYM>;
+)
+
+
+ZMK_HOLD_TAP(smart_bkspace_sym,
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&sym_bkspace_dance>;
+)
+ZMK_TAP_DANCE(sym_bkspace_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp BSPC>, <&smart_sym>;  // reverse this for sticky-num on single tap
+)
+
+ZMK_TRI_STATE(smart_nav,
+    bindings = <&tog U_NAV>, <&none>, <&tog U_NAV>;
+    ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH2>;
+    ignored-layers = <U_NAV>;
+)
+
+ZMK_HOLD_TAP(smart_space_nav,
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&nav_space_dance>;
+)
+ZMK_TAP_DANCE(nav_space_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp SPACE>, <&smart_nav>;  // reverse this for sticky-num on single tap
+)
+
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
 ZMK_HOLD_TAP(smart_num,
     flavor = "hold-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mo>, <&num_dance>;
 )
 ZMK_TAP_DANCE(num_dance,
-    tapping-term-ms = <250>;
+    tapping-term-ms = <200>;
     bindings = <&kp RET>, <&num_word>;  // reverse this for sticky-num on single tap
 )
 
@@ -131,6 +167,7 @@ ZMK_TAP_DANCE(mouse_tab_dance,
     tapping-term-ms = <250>;
     bindings = <&kp TAB>, <&smart_mouse>;
 )
+
 
  
 /* Custom behaviors */

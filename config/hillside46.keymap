@@ -1,6 +1,8 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
-
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/num_word.dtsi>
+#include <input/processors.dtsi>
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/46/hillside46.h"
 #include "../miryoku/miryoku.dtsi"
@@ -32,9 +34,9 @@
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
     ZMK_HOLD_TAP(NAME, \
         flavor = "balanced"; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <QUICK_TAP_MS>; \
-        require-prior-idle-ms = <150>; \
+        tapping-term-ms = <200>; \
+        quick-tap-ms = <200>; \
+        require-prior-idle-ms = <125>; \
         bindings = <HOLD>, <TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
@@ -46,6 +48,120 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
 MAKE_HRM(hmr_lpar_lt, &kp, &lpar_lt, KEYS_L THUMBS)    // "    "   "   "
 MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
+
+/* Homerow retro mods */
+
+// #define MAKE_RETRO_HRM(NAME, HOLD, TAP, RETRO, TRIGGER_POS) \
+//     ZMK_HOLD_TAP(NAME, \
+//         flavor = "balanced"; \
+//         tapping-term-ms = <200>; \
+//         quick-tap-ms = <200>; \
+//         require-prior-idle-ms = <125>; \
+//         bindings = <HOLD>, <TAP>; \
+//         retro-tap; \
+//         retro-tap-behavior = "key_press"; \
+//         retro-tap-param1 = <RETRO>; \
+//         hold-trigger-key-positions = <TRIGGER_POS>; \
+//         hold-trigger-on-release; \
+//     )
+
+// MAKE_RETRO_HRM(hmrla, &kp, &kp, <LS(A)>, KEYS_R THUMBS) //left
+// MAKE_RETRO_HRM(hmrls, &kp, &kp, <S>, KEYS_R THUMBS) //left
+// MAKE_RETRO_HRM(hmrld, &kp, &kp, <D>, KEYS_R THUMBS) //left
+// MAKE_RETRO_HRM(hmrlf, &kp, &kp, <F>, KEYS_R THUMBS) //left
+// MAKE_RETRO_HRM(hmrrj, &kp, &kp, <J>, KEYS_L THUMBS) //right
+// MAKE_RETRO_HRM(hmrrk, &kp, &kp, <K>, KEYS_L THUMBS) //right
+// MAKE_RETRO_HRM(hmrrl, &kp, &kp, <L>, KEYS_L THUMBS) //right
+// MAKE_RETRO_HRM(hmrrqt, &kp, &kp, <SQT>, KEYS_L THUMBS) //right
+
+ZMK_HOLD_TAP(retro_a,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(A)>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_s,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(S)>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_d,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(D)>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_f,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(F)>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_j,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(J)>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_k,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(K)>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_l,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(L)>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
+ZMK_HOLD_TAP(retro_qt,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>; 
+    bindings = <&kp>, <&kp>;
+    retro-tap;
+    retro-tap-behavior = "key_press";
+    retro-tap-param1 = <LS(SQT)>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+)
 
 /* Nav cluster */
 
@@ -79,11 +195,28 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 /* Caps-word, num-word and smart-mouse */
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
+ZMK_MOD_MORPH(smart_number,
+    bindings = <&kp RET>, <&num_word U_NUM>;
+    mods = <(MOD_LGUI)>;
+)
+
 ZMK_MOD_MORPH(smart_shft,
     bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT)>;
+    mods = <(MOD_LGUI)>;
 )
-&caps_word {  // mods deactivate caps-word, requires PR #1451
+
+ZMK_MOD_MORPH(r_smart_shft,
+    bindings = <&sk RSHFT>, <&caps_word>;
+    mods = <(MOD_LGUI)>;
+)
+
+
+ZMK_MOD_MORPH(smart_nav,
+    bindings = <&kp SPACE>, <&nav_word U_NAV>;
+    mods = <(MOD_LGUI)>;
+)
+&caps_word {  
+    /delete-property/ ignore-numbers;
     /delete-property/ ignore-modifiers;
     continue-list = <BSPC DEL DOT COMMA FSLH EQUAL UNDER MINUS SPACE>;
 };
@@ -97,49 +230,60 @@ ZMK_TRI_STATE(smart_sym,
 
 
 ZMK_HOLD_TAP(smart_bkspace_sym,
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
     bindings = <&mo>, <&sym_bkspace_dance>;
 )
 ZMK_TAP_DANCE(sym_bkspace_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     bindings = <&kp BSPC>, <&smart_sym>;  // reverse this for sticky-num on single tap
 )
 
-ZMK_TRI_STATE(smart_nav,
-    bindings = <&tog U_NAV>, <&none>, <&tog U_NAV>;
-    ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH2>;
-    ignored-layers = <U_NAV>;
-)
+// ZMK_TRI_STATE(smart_nav,
+//     bindings = <&tog U_NAV>, <&none>, <&tog U_NAV>;
+//     ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH2>;
+//     ignored-layers = <U_NAV>;
+// )
 
 ZMK_HOLD_TAP(smart_space_nav,
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&nav_space_dance>;
+    bindings = <&mo>, <&smart_nav>;
 )
 ZMK_TAP_DANCE(nav_space_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     bindings = <&kp SPACE>, <&smart_nav>;  // reverse this for sticky-num on single tap
 )
 
-// tap: num-word | double-tap: sticky num-layer | hold: num-layer
-ZMK_HOLD_TAP(smart_num,
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&num_dance>;
+ZMK_TRI_STATE(smart_num,
+    bindings = <&tog U_NUM>, <&none>, <&tog U_NUM>;
+    ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1 RH2>;
+    ignored-layers = <U_NUM>;
 )
-ZMK_TAP_DANCE(num_dance,
-    tapping-term-ms = <200>;
-    bindings = <&kp RET>, <&num_word>;  // reverse this for sticky-num on single tap
+
+// tap: num-word | double-tap: sticky num-layer | hold: num-layer
+ZMK_HOLD_TAP(smart_enter_num,
+    flavor = "hold-preferred";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&smart_number>;
+)
+ZMK_TAP_DANCE(num_enter_dance,
+    tapping-term-ms = <250>;
+    bindings = <&kp RET>, <&smart_num>;  // reverse this for sticky-num on single tap
 )
 
 &num_word {
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL UNDER LPAR RPAR LBRC RBRC LBKT RBKT>;
-    layers = <U_NUM>;  // replace NUM by the location of numbers layer
 };
+
+// &nav_word {
+//     ignore-alphas;
+//     continue-list = <LEFT RIGHT UP DOWN>;
+//     layers = <U_NAV>;  // replace NUM by the location of numbers layerV
+// };
 
  // ╭─────────────────────────╮               ╭─────────────────────────╮
  // │ LT5 LT4 LT3 LT2 LT1 LT0 │               │ RT0 RT1 RT2 RT3 RT4 RT5 │
@@ -214,6 +358,17 @@ SIMPLE_MORPH(qexcl, SFT, &kp EXCL, &kp QMARK)
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 
+
+// tap: colon | shift + tap: semicolon | hold: activate layer
+ZMK_HOLD_TAP(cln_fun,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&flip_semi>;
+)
+SIMPLE_MORPH(cln_morph, SFT, &kp COLON, &kp SEMICOLON)
+
+
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
     flavor = "balanced";
@@ -241,6 +396,18 @@ ZMK_TAP_DANCE(copy_cut,
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
+ZMK_TAP_DANCE(esc_cancel,
+    tapping-term-ms = <250>;
+    bindings = <&kp ESC>, <&kp K_CANCEL>;
+)
+ZMK_TAP_DANCE(flip_semi,
+    tapping-term-ms = <250>;
+    bindings = <&kp COLON>, <&kp SEMI>;
+)
+ZMK_TAP_DANCE(alt_f12,
+    tapping-term-ms = <250>;
+    bindings = <&kp F12>, <&kp RALT>;
+)
 // Windows sleep key
 ZMK_MACRO(win_sleep,
     wait-ms = <500>;
@@ -258,3 +425,8 @@ ZMK_MACRO(win_sleep,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr RSHFT C_VOL_DN
+
+
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler 2 1>;
+}; 

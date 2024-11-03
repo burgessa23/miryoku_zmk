@@ -6,7 +6,7 @@
 #define MIRYOKU_MAPPING_EXTENDED_THUMBS
 // #define MIRYOKU_EXTRA_COLEMAKDH
 #define MIRYOKU_NAV_INVERTEDT
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+// #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_MAC
 
 #define XXX &none
@@ -70,9 +70,20 @@ nice_view_spi: &spi0 {
      K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 )\
+U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                                        K05              K06  K07  K08  K09  U_MT(RALT, DEL)      \
+ &smart_shft                 K10   K11   K12   K13  K14                                                                                        K15              K16  K17  K18  K19  &r_smart_shft              \
+U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24                 U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_DANCE(LA(TAB), ESC) K25              K26  K27  K28  K29  U_FP_WRAP(RG(LC(LALT)))  \
+                                               K32  U_MT(LCMD, LC(B)) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          
+
+#define MIRYOKU_LAYOUTMAPPING_NAV(\
+     K00, K01, K02, K03, K04,                          K05, K06, K07, K08, K09, \
+     K10, K11, K12, K13, K14,                          K15, K16, K17, K18, K19, \
+     K20, K21, K22, K23, K24,                          K25, K26, K27, K28, K29, \
+     N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
+)\
 U_MT(LCTRL, ESC)             K00   K01   K02   K03  K04                                                                                        K05              K06  K07  K08  K09  U_LT(U_BUTTON, DEL)      \
 &smart_shft                  K10   K11   K12   K13  K14                                                                                        K15              K16  K17  K18  K19  &smart_shft              \
-U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24                 U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_DANCE(LA(TAB), ESC) K25              K26  K27  K28  K29  U_FP_WRAP(LG(LC(LALT)))  \
-                                               K32  U_MT(LCMD, LC(B)) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          \
+U_BP_WRAP(LG(LC(LALT)))      K20   K21   K22   K23  K24                 U_MT(LS(LA(P)), LS(LA(C)))              U_RAY_DANCE(LA(TAB), ESC) K25              K26  K27  K28  K29  U_FP_WRAP(RG(LC(LALT)))  \
+                                               K32  U_MT(LCMD, LC(B)) K33                          K34   K35  K36                            U_MT(LALT, F12)  K37                                          
 
 

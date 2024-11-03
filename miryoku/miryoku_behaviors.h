@@ -14,12 +14,17 @@
 #define U_LTNUM(LAYER, TAP) &u_ltnum LAYER TAP
 
 #define U_SMART_NUM &smart_num U_NUM 0
+#define U_CLN_FUN &cln_fun U_FUN 0
 #define U_SMART_SPACE_NAV &smart_space_nav U_NAV 0
 #define U_SMART_TAB_MOUSE &smart_tab_mouse U_MOUSE 0
+#define U_SMART_ENTER_NUM &smart_enter_num U_NUM 0
 #define U_SMART_BKSPACE_SYM &smart_bkspace_sym U_SYM 0
 
+#define U_ALT_F12 &alt_f12
 
-#define U_WORDS &nc_word
+#define U_COPY_SWAP(MOD, TAP) &copy_swap MOD TAP
+
+// #define U_WORDS &nc_word
 #define U_RAY &u_ray
 #define U_BP &u_back_pipe
 #define U_FP &u_fwd_pipe
@@ -38,7 +43,7 @@
 #define U_SHFT_CAPS(MOD, TAP) &shft_caps_word MOD TAP
 #define U_SHFT_NUM(MOD) &shft_num_word MOD 0
 #define U_COL_SEMI &col_semi
-
+#define U_ESC_CANCEL &esc_cancel
 #define U_SNS(MOD, TAP) &s_n_s MOD TAP 
 
 #define AS(keycode) &as LS(keycode) keycode

@@ -23,6 +23,8 @@
 #define U_ALT_F12 &alt_f12
 
 #define U_COPY_SWAP(MOD, TAP) &copy_swap MOD TAP
+#define ESC_SWITCH_COPY &esc_switch_copy RG(LC(LALT)) 0
+#define GUI_RAY_SWITCH &gui_ray_switch LGUI 0
 
 // #define U_WORDS &nc_word
 #define U_RAY &u_ray
